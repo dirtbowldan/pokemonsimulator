@@ -9,6 +9,8 @@ import FireRedSequence from "./FireRedSequence";
 import Gen3Pokemon from "./allpokemonbasestats";
 import gen3moveset from "./gen3movesets";
 import allmoves from "./allmoves";
+import BattleScene from "./BattleScene";
+var stage = 0
 
 const GameScreen = () => {
   const emptyPokemon = {
@@ -69,6 +71,16 @@ const GameScreen = () => {
         currpp: 0,
         maxpp: 0,
       },
+    },
+    profile: {
+      height: "1 m",
+      weight: "13 kg",
+      egg: ["Monster", "Grass"],
+      ability: [
+        ["Overgrow", "false"],
+        ["Chlorophyll", "true"],
+      ],
+      gender: "87.5:12.5",
     },
   };
 
@@ -166,20 +178,20 @@ const GameScreen = () => {
     emptyPokemon,
     emptyPokemon,
   ]);
-  
 
   //Sets Text Log Ref
   const refLog = React.useRef();
 
-  //Shows current team
+ const selectPokemon= (event) => {
+  receivePokemon(parseInt(event.currentTarget.getAttribute("name")))
+ }
 
   //Recieve Pokemon From the Log
-  const calcEffect = (effectId) => {};
 
-  const receivePokemon = (event) => {
+  const receivePokemon = (pokeId) => {
     //Get new pokemon info from database
     const newpokemon =
-      Gen3Pokemon[parseInt(event.currentTarget.getAttribute("name"))];
+      Gen3Pokemon[pokeId];
     let temp = allUserPokemon;
     let ct = 0;
     var level = 5;
@@ -204,9 +216,9 @@ const GameScreen = () => {
     const newmoveset = gen3moveset.filter(
       (move) => move.pokeId == newpokemon.pokeId
     );
-    
+
     let templearnset = newmoveset.filter((move) => move.movemethod == "1");
-    
+
     let learnset = [];
     let tmset = [];
     let tutorset = [];
@@ -217,7 +229,6 @@ const GameScreen = () => {
       learnset.push(newmove);
     });
 
-  
     let learnnow = [];
 
     learnset.forEach((move) => {
@@ -225,8 +236,6 @@ const GameScreen = () => {
         learnnow.push(move);
       }
     });
-
-    console.log("learnow", learnnow);
 
     while (learnnow.length < 4) {
       learnnow.push(emptymove);
@@ -237,8 +246,6 @@ const GameScreen = () => {
     newpokemon.moves.move2 = learnnow[1];
     newpokemon.moves.move3 = learnnow[2];
     newpokemon.moves.move4 = learnnow[3];
-
-    console.log(newpokemon);
 
     //Checks to see if pokemon should be in party or pc (will update to less rigid system in future)
 
@@ -284,54 +291,47 @@ const GameScreen = () => {
       newpokemon.name = newpokemon.name.english;
       newpokemon.moveset = [];
 
-    const newmoveset = gen3moveset.filter(
-      (move) => move.pokeId == newpokemon.pokeId
-    );
+      const newmoveset = gen3moveset.filter(
+        (move) => move.pokeId == newpokemon.pokeId
+      );
 
+      let templearnset = newmoveset.filter((move) => move.movemethod == "1");
 
-    
-    let templearnset = newmoveset.filter((move) => move.movemethod == "1");
-    
-    let learnset = [];
-    let tmset = [];
-    let tutorset = [];
-    templearnset.forEach((move) => {
-      let newmove = allmoves[move.moveId - 1];
-      newmove.level = move.level;
+      let learnset = [];
+      let tmset = [];
+      let tutorset = [];
+      templearnset.forEach((move) => {
+        let newmove = allmoves[move.moveId - 1];
+        newmove.level = move.level;
 
-      learnset.push(newmove);
-    });
+        learnset.push(newmove);
+      });
 
-   
-    let learnnow = [];
+      let learnnow = [];
 
-    learnset.forEach((move) => {
-      if (move.level <= newpokemon.level && move.level) {
-        learnnow.push(move);
+      learnset.forEach((move) => {
+        if (move.level <= newpokemon.level && move.level) {
+          learnnow.push(move);
+        }
+      });
+
+      while (learnnow.length < 4) {
+        learnnow.push(emptymove);
       }
-    });
 
-    
-
-    while (learnnow.length < 4) {
-      learnnow.push(emptymove);
-    }
-
-    newpokemon.moves = {};
-    newpokemon.moves.move1 = learnnow[0];
-    newpokemon.moves.move2 = learnnow[1];
-    newpokemon.moves.move3 = learnnow[2];
-    newpokemon.moves.move4 = learnnow[3];
+      newpokemon.moves = {};
+      newpokemon.moves.move1 = learnnow[0];
+      newpokemon.moves.move2 = learnnow[1];
+      newpokemon.moves.move3 = learnnow[2];
+      newpokemon.moves.move4 = learnnow[3];
 
       newpokemonarr.push(newpokemon);
-
-      
     }
 
     //Checks to see if pokemon should be in party or pc (will update to less rigid system in future)
 
     //adds newpokemon to team officially
-    console.log("newpokemon", newpokemonarr)
+
     updateCpuCurrentPokemon(newpokemonarr);
 
     //creates info to send to log
@@ -345,133 +345,25 @@ const GameScreen = () => {
     });
   };
 
-  
-  const calcDamage = (move, attacker, defender) => {
-    console.log("damage", attacker)
-    console.log(defender)
-    let damage =
-      (((2 * attacker.level) / 5 + 2) *
-        move.power *
-        attacker.currentstats.att) /
-        defender.currentstats.def /
-      50;
-
-      return damage
-  }
-
-
-  
-  
-  
-  const calcMove = (move, attacker, defender) =>{
-    let bothpokemonarray =[attacker, defender]
-    console.log("calcMove", attacker)
-    console.log(move)
-    if(move.effectId === "1"){
-
-      let attackerdamage = calcDamage(move, attacker, defender)
-      let defendernewhealth = Math.ceil(
-      defender.currentstats.currenthp - attackerdamage
-      );
-
-      let newdefender = {
-        ...defender,
-
-        
-            currentstats: {
-            ...defender.currentstats,
-            currenthp: defendernewhealth,
-          },
-       
-      };
-      
-      bothpokemonarray[1] = newdefender
-    } 
-
-    
-    //Defender Stat Att down 1 state
-
-    
-    
-    return bothpokemonarray
-  }
-  
-  
-  
-  
   //Executes a move in the turn
 
-  const executeMove = (event) => {
-    let userpkmn = allUserPokemon[0]
-    let cpupkmn = cpuCurrentPokemon[0]
-    
-    console.log("execute user pokemon", userpkmn)
-    let movename = event.currentTarget.getAttribute("name");
-    let usermove = userpkmn.moves[movename]
-    let cpumove = cpupkmn.moves.move1
-    console.log("usermove", usermove)
-    console.log("cpumove", cpumove)
-    let bothpkmn = calcMove(usermove, userpkmn, cpupkmn)
-    bothpkmn = calcMove(cpumove, bothpkmn[1], bothpkmn[0])
-    userpkmn = bothpkmn[1]
-    cpupkmn = bothpkmn[0]
-
-    
-    
-    
-    
-    
-    
-
-    //updates the health of pokemon affected
-
-    updateUserPokemon((prevState) => {
-      console.log("Update state prevstate");
-      let dup = [...prevState];
-      dup.shift();
-      console.log("first dup");
-      console.log(dup);
-      
-      dup.unshift(userpkmn);
-      console.log("final");
-      console.log(dup);
-
-      return [...dup];
-    });
-
-    //updates cpu pokemon
-    updateCpuCurrentPokemon((prevState) => {
-      console.log("Update state prevstate");
-      let dup = [...prevState];
-      dup.shift();
-      console.log("first dup");
-      console.log(dup);
-      dup.unshift(cpupkmn);
-      console.log("final");
-      console.log(dup);
-
-      return [...dup];
-    });
-  };
-  let stage = 0;
+  
   const stages = FireRedSequence;
+  
   const [currentStage, updateCurrentStage] = React.useState(stages);
   const nextStep = () => {
-    console.log(stages[stage]);
     if (stages[stage].type === "pick") {
       updateLogInfo([
         <div onClick={nextStep}>
           <SelectorLog
             pokemon={stages[stage].pokemon}
-            receivePokemon={receivePokemon}
+            receivePokemon={selectPokemon}
             level={stages[stage].level}
           />
         </div>,
       ]);
     }
     if (stages[stage].type === "battle") {
-      console.log("yo");
-
       if (stages[stage].rival) {
         if (allUserPokemon[0].pokeId === 1) {
           setCpuPokemon([4]);
@@ -492,138 +384,32 @@ const GameScreen = () => {
       updateLogInfo([<div onClick={nextStep}>Fight</div>]);
     }
     if (stages[stage].type === "receive") {
-      updateLogInfo([<div onClick={nextStep}>why</div>]);
+      setCpuPokemon([0]);
+      receivePokemon(stages[stage].pokemon)
+      updateLogInfo([<button onClick={nextStep}>next route</button>]);
     }
     stage++;
   };
   const [logInfo, updateLogInfo] = React.useState([
     <button onClick={nextStep}>Start</button>,
   ]);
+  let userpokemonparty = [
+    allUserPokemon[0],
+    allUserPokemon[1],
+    allUserPokemon[2],
+    allUserPokemon[3],
+    allUserPokemon[4],
+    allUserPokemon[5],
+  ];
+
   return (
     <div className="screen">
       <div className="gamearea">
-        <div className="battleScene">
-          <h1>Battle Name</h1>
-          <div className="fight">
-            <div className="pokemon">
-              <span className="pokemonInfo">
-                <div className="info">
-                  Lvl. {allUserPokemon[0].level} {allUserPokemon[0].name}
-                </div>
-                <span className="healthinfo">
-                  <span className="healthbar"></span>
-                  <div className="healthnumber">
-                    {allUserPokemon[0].currentstats.currenthp}/
-                    {allUserPokemon[0].currentstats.maxhp}
-                  </div>
-                </span>
-                <div className="stats">
-                  <div className="stat">
-                    Att: {allUserPokemon[0].currentstats.att}
-                  </div>
-                  <div className="stat">
-                    Def: {allUserPokemon[0].currentstats.def}
-                  </div>
-                  <div className="stat">
-                    SpA: {allUserPokemon[0].currentstats.spa}
-                  </div>
-                  <div className="stat">
-                    SpD: {allUserPokemon[0].currentstats.spd}
-                  </div>
-                  <div className="stat">
-                    Spe: {allUserPokemon[0].currentstats.spe}
-                  </div>
-                  <div className="stat">Type: {allUserPokemon[0].type}</div>
-                </div>
-              </span>
-              <img
-                src={require("./pokeimgs/" + allUserPokemon[0].pokeId + ".png")}
-              />
-            </div>
-            <div className="cpupokemon">
-              <span className="pokemonInfo">
-                <div className="info">
-                  Lvl. {cpuCurrentPokemon[0].level} {cpuCurrentPokemon[0].name}
-                </div>
-                <span className="healthinfo">
-                  <span className="healthbar"></span>
-                  <div className="healthnumber">
-                    {cpuCurrentPokemon[0].currentstats.currenthp}/
-                    {cpuCurrentPokemon[0].currentstats.maxhp}
-                  </div>
-                </span>
-                <div className="stats">
-                  <div className="stat">
-                    Att: {cpuCurrentPokemon[0].currentstats.att}
-                  </div>
-                  <div className="stat">
-                    Def: {cpuCurrentPokemon[0].currentstats.def}
-                  </div>
-                  <div className="stat">
-                    SpA: {cpuCurrentPokemon[0].currentstats.spa}
-                  </div>
-                  <div className="stat">
-                    SpD: {cpuCurrentPokemon[0].currentstats.spd}
-                  </div>
-                  <div className="stat">
-                    Spe: {cpuCurrentPokemon[0].currentstats.spe}
-                  </div>
-                  <div className="stat">Type: {cpuCurrentPokemon[0].type}</div>
-                </div>
-              </span>
-              <img
-                src={require("./pokeimgs/" +
-                  cpuCurrentPokemon[0].pokeId +
-                  ".png")}
-              />
-            </div>
-          </div>
-          <div className="actions">
-            <div className="moves">
-              <a
-                className="move"
-                value="move1"
-                onClick={executeMove}
-                name="move1"
-              >
-                <div className="movetitle">
-                  {allUserPokemon[0].moves.move1.moveName}
-                </div>
-                <div> {allUserPokemon[0].moves.move1.typeId}</div>
-                <div>{allUserPokemon[0].moves.move1.power}</div>
-
-                <div>PP: {allUserPokemon[0].moves.move1.pp}</div>
-              </a>
-              <a className="move" onClick={executeMove} name="move2">
-                <div className="movetitle">
-                  {allUserPokemon[0].moves.move2.moveName}
-                </div>
-                <div> {allUserPokemon[0].moves.move2.typeId}</div>
-                <div>{allUserPokemon[0].moves.move2.power}</div>
-
-                <div>PP: {allUserPokemon[0].moves.move2.pp}</div>
-              </a>
-              <a className="move" onClick={executeMove} name="move3">
-                <div className="movetitle">
-                  {allUserPokemon[0].moves.move3.moveName}
-                </div>
-                <div>{allUserPokemon[0].moves.move3.typeId}</div>
-                <div>{allUserPokemon[0].moves.move3.power}</div>
-
-                <div>PP: {allUserPokemon[0].moves.move3.pp}</div>
-              </a>
-              <a className="move" onClick={executeMove} name="move4">
-                <div className="movetitle">
-                  {allUserPokemon[0].moves.move4.moveName}
-                </div>
-                <div> {allUserPokemon[0].moves.move4.typeId}</div>
-                <div>{allUserPokemon[0].moves.move4.power}</div>
-
-                <div>PP: {allUserPokemon[0].moves.move4.pp}</div>
-              </a>
-            </div>
-          </div>
-        </div>
+        <BattleScene
+          userpokemonparty={userpokemonparty}
+          cpupokemonparty={cpuCurrentPokemon}
+          nextStep={nextStep}
+        />
         <div className="pokemonparty">
           <PokemonPartyCard userPokemon={allUserPokemon[0]} />
           <PokemonPartyCard userPokemon={allUserPokemon[1]} />

@@ -21,7 +21,17 @@ const Gen3Pokemon = [
         sprite: "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/001.png",
         thumbnail: "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/001.png",
         hires: "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/001.png"
-      }
+      },
+      profile: {
+        height: "1 m",
+        weight: "13 kg",
+        egg: ["Monster", "Grass"],
+        ability: [
+          ["Overgrow", "false"],
+          ["Chlorophyll", "true"]
+        ],
+        gender: "87.5:12.5"
+      },
   },  
   
   {
@@ -114,7 +124,7 @@ const Gen3Pokemon = [
         spe: 80
       },
       species: "Seed Pokémon",
-      desc: "There is a large flower on Venusaur’s back. The flower is sapokeId to take on vivpokeId colors if it gets plenty of nutrition and sunlight. The flower’s aroma soothes the emotions of people.",
+      desc: "There is a large flower on Venusaur’s back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower’s aroma soothes the emotions of people.",
       evo: { "prev": ["2", "Level 32"] },
       profile: {
         height: "2 m",
@@ -294,7 +304,7 @@ const Gen3Pokemon = [
         spe: 58
       },
       species: "Turtle Pokémon",
-      desc: "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evpokeIdence of this Pokémon’s toughness as a battler.",
+      desc: "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon’s toughness as a battler.",
       evo: { "prev": ["7", "Level 16"], next: [["9", "Level 36"]] },
       profile: {
         height: "1 m",
@@ -402,7 +412,7 @@ const Gen3Pokemon = [
         spe: 30
       },
       species: "Cocoon Pokémon",
-      desc: "Its hard shell doesn’t crack a bit even if Pikipek pecks at it, but it will tip over, spilling out its inspokeIdes.",
+      desc: "Its hard shell doesn’t crack a bit even if Pikipek pecks at it, but it will tip over, spilling out its insides.",
       evo: { "prev": ["10", "Level 7"], next: [["12", "Level 10"]] },
       profile: {
         height: "0.7 m",
@@ -507,7 +517,7 @@ const Gen3Pokemon = [
         spe: 35
       },
       species: "Cocoon Pokémon",
-      desc: "Kakuna remains virtually immobile as it clings to a tree. However, on the inspokeIde, it is extremely busy as it prepares for its coming evolution. This is evpokeIdent from how hot the shell becomes to the touch.",
+      desc: "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
       evo: { "prev": ["13", "Level 7"], next: [["15", "Level 10"]] },
       profile: {
         height: "0.6 m",
@@ -561,7 +571,7 @@ const Gen3Pokemon = [
     {
       pokeId: 16,
       name: {
-        english: "PpokeIdgey",
+        english: "Pidgey",
         japanese: "ポッポ",
         chinese: "波波",
         french: "Roucool"
@@ -576,7 +586,7 @@ const Gen3Pokemon = [
         spe: 56
       },
       species: "Tiny Bird Pokémon",
-      desc: "PpokeIdgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
+      desc: "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
       evo: { next: [["17", "Level 18"]] },
       profile: {
         height: "0.3 m",
@@ -598,7 +608,7 @@ const Gen3Pokemon = [
     {
       pokeId: 17,
       name: {
-        english: "PpokeIdgeotto",
+        english: "Pidgeotto",
         japanese: "ピジョン",
         chinese: "比比鸟",
         french: "Roucoups"
@@ -613,7 +623,7 @@ const Gen3Pokemon = [
         spe: 71
       },
       species: "Bird Pokémon",
-      desc: "PpokeIdgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
+      desc: "Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
       evo: { "prev": ["16", "Level 18"], next: [["18", "Level 36"]] },
       profile: {
         height: "1.1 m",
@@ -635,7 +645,7 @@ const Gen3Pokemon = [
     {
       pokeId: 18,
       name: {
-        english: "PpokeIdgeot",
+        english: "Pidgeot",
         japanese: "ピジョット",
         chinese: "大比鸟",
         french: "Roucarnage"
@@ -650,7 +660,7 @@ const Gen3Pokemon = [
         spe: 101
       },
       species: "Bird Pokémon",
-      desc: "This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose PpokeIdgeot as their Pokémon.",
+      desc: "This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon.",
       evo: { "prev": ["17", "Level 36"] },
       profile: {
         height: "1.5 m",
@@ -840,7 +850,7 @@ const Gen3Pokemon = [
         weight: "6.9 kg",
         egg: ["Field", "Dragon"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Shed Skin", "false"],
           ["Unnerve", "true"]
         ],
@@ -877,7 +887,7 @@ const Gen3Pokemon = [
         weight: "65 kg",
         egg: ["Field", "Dragon"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Shed Skin", "false"],
           ["Unnerve", "true"]
         ],
@@ -1039,10 +1049,10 @@ const Gen3Pokemon = [
     {
       pokeId: 29,
       name: {
-        english: "NpokeIdoran♀",
+        english: "Nidoran♀",
         japanese: "ニドラン♀",
         chinese: "尼多兰",
-        french: "NpokeIdoran♀"
+        french: "Nidoran♀"
       },
       type: ["Poison"],
       base: {
@@ -1054,7 +1064,7 @@ const Gen3Pokemon = [
         spe: 41
       },
       species: "Poison Pin Pokémon",
-      desc: "NpokeIdoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn.",
+      desc: "Nidoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn.",
       evo: { next: [["30", "Level 16"]] },
       profile: {
         height: "0.4 m",
@@ -1076,10 +1086,10 @@ const Gen3Pokemon = [
     {
       pokeId: 30,
       name: {
-        english: "NpokeIdorina",
+        english: "Nidorina",
         japanese: "ニドリーナ",
         chinese: "尼多娜",
-        french: "NpokeIdorina"
+        french: "Nidorina"
       },
       type: ["Poison"],
       base: {
@@ -1091,7 +1101,7 @@ const Gen3Pokemon = [
         spe: 56
       },
       species: "Poison Pin Pokémon",
-      desc: "When NpokeIdorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others.",
+      desc: "When Nidorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others.",
       evo: {
         "prev": ["29", "Level 16"],
         next: [["31", "use Moon Stone"]]
@@ -1116,10 +1126,10 @@ const Gen3Pokemon = [
     {
       pokeId: 31,
       name: {
-        english: "NpokeIdoqueen",
+        english: "Nidoqueen",
         japanese: "ニドクイン",
         chinese: "尼多后",
-        french: "NpokeIdoqueen"
+        french: "Nidoqueen"
       },
       type: ["Poison", "Ground"],
       base: {
@@ -1131,7 +1141,7 @@ const Gen3Pokemon = [
         spe: 76
       },
       species: "Drill Pokémon",
-      desc: "NpokeIdoqueen’s body is encased in extremely hard scales. It is adept at sending foes flying with harsh tackles. This Pokémon is at its strongest when it is defending its young.",
+      desc: "Nidoqueen’s body is encased in extremely hard scales. It is adept at sending foes flying with harsh tackles. This Pokémon is at its strongest when it is defending its young.",
       evo: { "prev": ["30", "use Moon Stone"] },
       profile: {
         height: "1.3 m",
@@ -1153,10 +1163,10 @@ const Gen3Pokemon = [
     {
       pokeId: 32,
       name: {
-        english: "NpokeIdoran♂",
+        english: "Nidoran♂",
         japanese: "ニドラン♂",
         chinese: "尼多朗",
-        french: "NpokeIdoran♂"
+        french: "Nidoran♂"
       },
       type: ["Poison"],
       base: {
@@ -1168,7 +1178,7 @@ const Gen3Pokemon = [
         spe: 50
       },
       species: "Poison Pin Pokémon",
-      desc: "NpokeIdoran♂ has developed muscles for moving its ears. Thanks to them, the ears can be freely moved in any direction. Even the slightest sound does not escape this Pokémon’s notice.",
+      desc: "Nidoran♂ has developed muscles for moving its ears. Thanks to them, the ears can be freely moved in any direction. Even the slightest sound does not escape this Pokémon’s notice.",
       evo: { next: [["33", "Level 16"]] },
       profile: {
         height: "0.5 m",
@@ -1190,10 +1200,10 @@ const Gen3Pokemon = [
     {
       pokeId: 33,
       name: {
-        english: "NpokeIdorino",
+        english: "Nidorino",
         japanese: "ニドリーノ",
         chinese: "尼多力诺",
-        french: "NpokeIdorino"
+        french: "Nidorino"
       },
       type: ["Poison"],
       base: {
@@ -1205,7 +1215,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Poison Pin Pokémon",
-      desc: "NpokeIdorino has a horn that is harder than a diamond. If it senses a hostile presence, all the barbs on its back bristle up at once, and it challenges the foe with all its might.",
+      desc: "Nidorino has a horn that is harder than a diamond. If it senses a hostile presence, all the barbs on its back bristle up at once, and it challenges the foe with all its might.",
       evo: {
         "prev": ["32", "Level 16"],
         next: [["34", "use Moon Stone"]]
@@ -1230,10 +1240,10 @@ const Gen3Pokemon = [
     {
       pokeId: 34,
       name: {
-        english: "NpokeIdoking",
+        english: "Nidoking",
         japanese: "ニドキング",
         chinese: "尼多王",
-        french: "NpokeIdoking"
+        french: "Nidoking"
       },
       type: ["Poison", "Ground"],
       base: {
@@ -1245,7 +1255,7 @@ const Gen3Pokemon = [
         spe: 85
       },
       species: "Drill Pokémon",
-      desc: "NpokeIdoking’s thick tail packs enormously destructive power. With one swing, it can topple a metal transmission tower. Once this Pokémon goes on a rampage, there is no stopping it.",
+      desc: "Nidoking’s thick tail packs enormously destructive power. With one swing, it can topple a metal transmission tower. Once this Pokémon goes on a rampage, there is no stopping it.",
       evo: { "prev": ["33", "use Moon Stone"] },
       profile: {
         height: "1.4 m",
@@ -1607,7 +1617,7 @@ const Gen3Pokemon = [
         english: "Gloom",
         japanese: "クサイハナ",
         chinese: "臭臭花",
-        french: "OrtpokeIde"
+        french: "Ortide"
       },
       type: ["Grass", "Poison"],
       base: {
@@ -1619,7 +1629,7 @@ const Gen3Pokemon = [
         spe: 40
       },
       species: "Weed Pokémon",
-      desc: "From its mouth Gloom drips honey that smells absolutely horrible. Apparently, it loves the horrpokeId stench. It sniffs the noxious fumes and then drools even more of its honey.",
+      desc: "From its mouth Gloom drips honey that smells absolutely horrible. Apparently, it loves the horrid stench. It sniffs the noxious fumes and then drools even more of its honey.",
       evo: {
         "prev": ["43", "Level 21"],
         next: [
@@ -1771,7 +1781,7 @@ const Gen3Pokemon = [
         spe: 45
       },
       species: "Insect Pokémon",
-      desc: "Venonat is sapokeId to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even minuscule prey.",
+      desc: "Venonat is said to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even minuscule prey.",
       evo: { next: [["49", "Level 31"]] },
       profile: {
         height: "1 m",
@@ -2141,14 +2151,14 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Puppy Pokémon",
-      desc: "It has lived alongspokeIde humans since ages ago. Its bones have been found in excavations of ruins from the Stone Age.",
+      desc: "It has lived alongside humans since ages ago. Its bones have been found in excavations of ruins from the Stone Age.",
       evo: { next: [["59", "use Fire Stone"]] },
       profile: {
         height: "0.7 m",
         weight: "19 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Flash Fire", "false"],
           ["Justified", "true"]
         ],
@@ -2185,7 +2195,7 @@ const Gen3Pokemon = [
         weight: "155 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Flash Fire", "false"],
           ["Justified", "true"]
         ],
@@ -2517,7 +2527,7 @@ const Gen3Pokemon = [
         spe: 55
       },
       species: "Superpower Pokémon",
-      desc: "With four arms, it can attack and defend simultaneously. It’s sapokeId to have mastered every martial art in the world.",
+      desc: "With four arms, it can attack and defend simultaneously. It’s said to have mastered every martial art in the world.",
       evo: { "prev": ["67", "Trade"] },
       profile: {
         height: "1.6 m",
@@ -2554,7 +2564,7 @@ const Gen3Pokemon = [
         spe: 40
       },
       species: "Flower Pokémon",
-      desc: "Bellsprout’s thin and flexible body lets it bend and sway to avopokeId any attack, however strong it may be. From its mouth, this Pokémon spits a corrosive flupokeId that melts even iron.",
+      desc: "Bellsprout’s thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, this Pokémon spits a corrosive fluid that melts even iron.",
       evo: { next: [["70", "Level 21"]] },
       profile: {
         height: "0.7 m",
@@ -2673,7 +2683,7 @@ const Gen3Pokemon = [
         egg: ["Water 3"],
         ability: [
           ["Clear Body", "false"],
-          ["LiqupokeId Ooze", "false"],
+          ["Liquid Ooze", "false"],
           ["Rain Dish", "true"]
         ],
         gender: "50:50"
@@ -2710,7 +2720,7 @@ const Gen3Pokemon = [
         egg: ["Water 3"],
         ability: [
           ["Clear Body", "false"],
-          ["LiqupokeId Ooze", "false"],
+          ["Liquid Ooze", "false"],
           ["Rain Dish", "true"]
         ],
         gender: "50:50"
@@ -2872,7 +2882,7 @@ const Gen3Pokemon = [
     {
       pokeId: 78,
       name: {
-        english: "RappokeIdash",
+        english: "Rapidash",
         japanese: "ギャロップ",
         chinese: "烈焰马",
         french: "Galopa"
@@ -2887,7 +2897,7 @@ const Gen3Pokemon = [
         spe: 105
       },
       species: "Fire Horse Pokémon",
-      desc: "RappokeIdash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph.",
+      desc: "Rapidash usually can be seen casually cantering in the fields and plains. However, when this Pokémon turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph.",
       evo: { "prev": ["77", "Level 40"] },
       profile: {
         height: "1.7 m",
@@ -3117,7 +3127,7 @@ const Gen3Pokemon = [
         spe: 75
       },
       species: "Twin Bird Pokémon",
-      desc: "Doduo’s two heads contain completely pokeIdentical brains. A scientific study reported that on rare occasions, there will be examples of this Pokémon possessing different sets of brains.",
+      desc: "Doduo’s two heads contain completely identical brains. A scientific study reported that on rare occasions, there will be examples of this Pokémon possessing different sets of brains.",
       evo: { next: [["85", "Level 31"]] },
       profile: {
         height: "1.4 m",
@@ -3265,7 +3275,7 @@ const Gen3Pokemon = [
         spe: 25
       },
       species: "Sludge Pokémon",
-      desc: "The wastewater coming from factories is clean these days, so Grimer have nothing to eat. They’re sapokeId to be on the verge of extinction.",
+      desc: "The wastewater coming from factories is clean these days, so Grimer have nothing to eat. They’re said to be on the verge of extinction.",
       evo: { next: [["89", "Level 38"]] },
       profile: {
         height: "0.9 m",
@@ -3413,7 +3423,7 @@ const Gen3Pokemon = [
         spe: 80
       },
       species: "Gas Pokémon",
-      desc: "Poisonous gas comprises 95% of its body. It’s sapokeId that the remaining 5% is made up of the souls of those who died from the gas.",
+      desc: "Poisonous gas comprises 95% of its body. It’s said that the remaining 5% is made up of the souls of those who died from the gas.",
       evo: { next: [["93", "Level 25"]] },
       profile: {
         height: "1.3 m",
@@ -3446,7 +3456,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Gas Pokémon",
-      desc: "It’s dangerous to go outspokeIde alone on nights when you’re feeling sad. Haunter will catch you, and you won’t be able to go back home.",
+      desc: "It’s dangerous to go outside alone on nights when you’re feeling sad. Haunter will catch you, and you won’t be able to go back home.",
       evo: { "prev": ["92", "Level 25"], next: [["94", "Trade"]] },
       profile: {
         height: "1.6 m",
@@ -3623,7 +3633,7 @@ const Gen3Pokemon = [
         spe: 50
       },
       species: "River Crab Pokémon",
-      desc: "Krabby live on beaches, burrowed inspokeIde holes dug into the sand. On sandy beaches with little in the way of food, these Pokémon can be seen squabbling with each other over territory.",
+      desc: "Krabby live on beaches, burrowed inside holes dug into the sand. On sandy beaches with little in the way of food, these Pokémon can be seen squabbling with each other over territory.",
       evo: { next: [["99", "Level 28"]] },
       profile: {
         height: "0.4 m",
@@ -3954,7 +3964,7 @@ const Gen3Pokemon = [
         spe: 76
       },
       species: "Punching Pokémon",
-      desc: "Hitmonchan is sapokeId to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity.",
+      desc: "Hitmonchan is said to possess the spirit of a boxer who had been working toward a world championship. This Pokémon has an indomitable spirit and will never give up in the face of adversity.",
       evo: { "prev": ["236", "Level 20, Attack < Defense"] },
       profile: {
         height: "1.4 m",
@@ -4061,7 +4071,7 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Poison Gas Pokémon",
-      desc: "Weezing alternately shrinks and inflates its twin bodies to mix together toxic gases inspokeIde. The more the gases are mixed, the more powerful the toxins become. The Pokémon also becomes more putrpokeId.",
+      desc: "Weezing alternately shrinks and inflates its twin bodies to mix together toxic gases inside. The more the gases are mixed, the more powerful the toxins become. The Pokémon also becomes more putrid.",
       evo: { "prev": ["109", "Level 35"] },
       profile: {
         height: "1.2 m",
@@ -4131,7 +4141,7 @@ const Gen3Pokemon = [
         spe: 40
       },
       species: "Drill Pokémon",
-      desc: "Rhydon has a horn that serves as a drill. It is used for destroying rocks and boulders. This Pokémon occasionally rams into streams of magma, but the armor-like hpokeIde prevents it from feeling the heat.",
+      desc: "Rhydon has a horn that serves as a drill. It is used for destroying rocks and boulders. This Pokémon occasionally rams into streams of magma, but the armor-like hide prevents it from feeling the heat.",
       evo: {
         "prev": ["111", "Level 42"],
         next: [["464", "trade holding Protector"]]
@@ -4248,7 +4258,7 @@ const Gen3Pokemon = [
         spe: 90
       },
       species: "Parent Pokémon",
-      desc: "You shouldn’t get close to the child when it’s playing outspokeIde its mother’s pouch. Its mother is always nearby watching over it.",
+      desc: "You shouldn’t get close to the child when it’s playing outside its mother’s pouch. Its mother is always nearby watching over it.",
       evo: {},
       profile: {
         height: "2.2 m",
@@ -4660,7 +4670,7 @@ const Gen3Pokemon = [
         spe: 93
       },
       species: "Spitfire Pokémon",
-      desc: "The hotter the place, the better they feel. Magmar in Alola are sapokeId to be hardier than those in other areas.",
+      desc: "The hotter the place, the better they feel. Magmar in Alola are said to be hardier than those in other areas.",
       evo: {
         "prev": ["240", "Level 30"],
         next: [["467", "trade holding Magmarizer"]]
@@ -4743,7 +4753,7 @@ const Gen3Pokemon = [
         weight: "88.4 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Anger Point", "false"],
           ["Sheer Force", "true"]
         ],
@@ -4816,7 +4826,7 @@ const Gen3Pokemon = [
         weight: "235 kg",
         egg: ["Water 2", "Dragon"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Moxie", "true"]
         ],
         gender: "50:50"
@@ -4966,7 +4976,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Bubble Jet Pokémon",
-      desc: "It detects nearby moisture with its fin. When its fin begins trembling rappokeIdly, that means rain will fall in a few hours.",
+      desc: "It detects nearby moisture with its fin. When its fin begins trembling rapidly, that means rain will fall in a few hours.",
       evo: { "prev": ["133", "use Water Stone"] },
       profile: {
         height: "1 m",
@@ -5038,7 +5048,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Flame Pokémon",
-      desc: "The flame chamber inspokeIde its body ignites when Flareon gets agitated, reaching temperatures of up to 1,650 degrees Fahrenheit.",
+      desc: "The flame chamber inside its body ignites when Flareon gets agitated, reaching temperatures of up to 1,650 degrees Fahrenheit.",
       evo: { "prev": ["133", "use Fire Stone"] },
       profile: {
         height: "0.9 m",
@@ -5333,7 +5343,7 @@ const Gen3Pokemon = [
         spe: 85
       },
       species: "Freeze Pokémon",
-      desc: "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is sapokeId that when this Pokémon flies, snow will fall.",
+      desc: "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall.",
       evo: {},
       profile: {
         height: "1.7 m",
@@ -5405,7 +5415,7 @@ const Gen3Pokemon = [
         spe: 90
       },
       species: "Flame Pokémon",
-      desc: "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is sapokeId to dip its body in the molten magma of a volcano to burn and heal itself.",
+      desc: "Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon is injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself.",
       evo: {},
       profile: {
         height: "2 m",
@@ -5429,7 +5439,7 @@ const Gen3Pokemon = [
         english: "Dratini",
         japanese: "ミニリュウ",
         chinese: "迷你龙",
-        french: "MinpokeIdraco"
+        french: "Minidraco"
       },
       type: ["Dragon"],
       base: {
@@ -5585,7 +5595,7 @@ const Gen3Pokemon = [
         spe: 100
       },
       species: "New Species Pokémon",
-      desc: "Mew is sapokeId to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avopokeIds notice even if it approaches people.",
+      desc: "Mew is said to possess the genetic composition of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people.",
       evo: {},
       profile: {
         height: "0.4 m",
@@ -5654,7 +5664,7 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Leaf Pokémon",
-      desc: "Bayleef’s neck is ringed by curled-up leaves. InspokeIde each tubular leaf is a small shoot of a tree. The fragrance of this shoot makes people peppy.",
+      desc: "Bayleef’s neck is ringed by curled-up leaves. Inside each tubular leaf is a small shoot of a tree. The fragrance of this shoot makes people peppy.",
       evo: { "prev": ["152", "Level 16"], next: [["154", "Level 32"]] },
       profile: {
         height: "1.2 m",
@@ -5906,7 +5916,7 @@ const Gen3Pokemon = [
         spe: 78
       },
       species: "Big Jaw Pokémon",
-      desc: "Feraligatr intimpokeIdates its foes by opening its huge mouth. In battle, it will kick the ground hard with its thick and powerful hind legs to charge at the foe at an incredible speed.",
+      desc: "Feraligatr intimidates its foes by opening its huge mouth. In battle, it will kick the ground hard with its thick and powerful hind legs to charge at the foe at an incredible speed.",
       evo: { "prev": ["159", "Level 30"] },
       profile: {
         height: "2.3 m",
@@ -6016,7 +6026,7 @@ const Gen3Pokemon = [
         spe: 50
       },
       species: "Owl Pokémon",
-      desc: "It cries out at the same time every day. A long time ago, people cherished it and conspokeIdered it a divine messenger sent to tell the time.",
+      desc: "It cries out at the same time every day. A long time ago, people cherished it and considered it a divine messenger sent to tell the time.",
       evo: { next: [["164", "Level 20"]] },
       profile: {
         height: "0.7 m",
@@ -6053,7 +6063,7 @@ const Gen3Pokemon = [
         spe: 70
       },
       species: "Owl Pokémon",
-      desc: "When it turns its head entirely upspokeIde down, you know it’s troubled by something. If you don’t leave it be, it will peck you.",
+      desc: "When it turns its head entirely upside down, you know it’s troubled by something. If you don’t leave it be, it will peck you.",
       evo: { "prev": ["163", "Level 20"] },
       profile: {
         height: "1.6 m",
@@ -6384,7 +6394,7 @@ const Gen3Pokemon = [
         spe: 15
       },
       species: "Star Shape Pokémon",
-      desc: "SapokeId to have rpokeIdden here on a shooting star, Cleffa seem to appear in places where meteorites have struck in the past.",
+      desc: "Said to have ridden here on a shooting star, Cleffa seem to appear in places where meteorites have struck in the past.",
       evo: { next: [["35", "high Friendship"]] },
       profile: {
         height: "0.3 m",
@@ -6458,7 +6468,7 @@ const Gen3Pokemon = [
         spe: 20
       },
       species: "Spike Ball Pokémon",
-      desc: "As its energy, Togepi uses the positive emotions of compassion and pleasure exuded by people and Pokémon. This Pokémon stores up feelings of happiness inspokeIde its shell, then shares them with others.",
+      desc: "As its energy, Togepi uses the positive emotions of compassion and pleasure exuded by people and Pokémon. This Pokémon stores up feelings of happiness inside its shell, then shares them with others.",
       evo: { next: [["176", "high Friendship"]] },
       profile: {
         height: "0.3 m",
@@ -6495,7 +6505,7 @@ const Gen3Pokemon = [
         spe: 40
       },
       species: "Happiness Pokémon",
-      desc: "Togetic is sapokeId to be a Pokémon that brings good fortune. When the Pokémon spots someone who is pure of heart, it is sapokeId to appear and share its happiness with that person.",
+      desc: "Togetic is said to be a Pokémon that brings good fortune. When the Pokémon spots someone who is pure of heart, it is said to appear and share its happiness with that person.",
       evo: {
         "prev": ["175", "high Friendship"],
         next: [["468", "use Shiny Stone"]]
@@ -6978,7 +6988,7 @@ const Gen3Pokemon = [
         spe: 110
       },
       species: "Cottonweed Pokémon",
-      desc: "Jumpluff rpokeIdes warm southern winds to cross the sea and fly to foreign lands. The Pokémon descends to the ground when it encounters cold air while it is floating.",
+      desc: "Jumpluff rides warm southern winds to cross the sea and fly to foreign lands. The Pokémon descends to the ground when it encounters cold air while it is floating.",
       evo: { "prev": ["188", "Level 27"] },
       profile: {
         height: "0.8 m",
@@ -7126,7 +7136,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Clear Wing Pokémon",
-      desc: "Yanma is capable of seeing 360 degrees without having to move its eyes. It is a great flier that is adept at making sudden stops and turning mpokeIdair. This Pokémon uses its flying ability to quickly chase down targeted prey.",
+      desc: "Yanma is capable of seeing 360 degrees without having to move its eyes. It is a great flier that is adept at making sudden stops and turning midair. This Pokémon uses its flying ability to quickly chase down targeted prey.",
       evo: { next: [["469", "after Ancient Power learned"]] },
       profile: {
         height: "1.2 m",
@@ -7200,7 +7210,7 @@ const Gen3Pokemon = [
         spe: 35
       },
       species: "Water Fish Pokémon",
-      desc: "Quagsire hunts for food by leaving its mouth wpokeIde open in water and waiting for its prey to blunder in unaware. Because the Pokémon does not move, it does not get very hungry.",
+      desc: "Quagsire hunts for food by leaving its mouth wide open in water and waiting for its prey to blunder in unaware. Because the Pokémon does not move, it does not get very hungry.",
       evo: { "prev": ["194", "Level 20"] },
       profile: {
         height: "1.4 m",
@@ -7309,7 +7319,7 @@ const Gen3Pokemon = [
         spe: 91
       },
       species: "Darkness Pokémon",
-      desc: "It searches for shiny things for its boss. Murkrow’s presence is sapokeId to be unlucky, so many people detest it.",
+      desc: "It searches for shiny things for its boss. Murkrow’s presence is said to be unlucky, so many people detest it.",
       evo: { next: [["430", "use Dusk Stone"]] },
       profile: {
         height: "0.5 m",
@@ -7522,7 +7532,7 @@ const Gen3Pokemon = [
         spe: 15
       },
       species: "Bagworm Pokémon",
-      desc: "It sticks tree bark to itself with its saliva, making itself thicker and larger. Elderly Pineco are rpokeIdiculously huge.",
+      desc: "It sticks tree bark to itself with its saliva, making itself thicker and larger. Elderly Pineco are ridiculously huge.",
       evo: { next: [["205", "Level 31"]] },
       profile: {
         height: "0.6 m",
@@ -7558,7 +7568,7 @@ const Gen3Pokemon = [
         spe: 40
       },
       species: "Bagworm Pokémon",
-      desc: "In the moment that it gulps down its prey, the inspokeIde of its shell is exposed, but to this day, no one has ever seen that sight.",
+      desc: "In the moment that it gulps down its prey, the inside of its shell is exposed, but to this day, no one has ever seen that sight.",
       evo: { "prev": ["204", "Level 31"] },
       profile: {
         height: "1.2 m",
@@ -7594,7 +7604,7 @@ const Gen3Pokemon = [
         spe: 45
       },
       species: "Land Snake Pokémon",
-      desc: "When it sees a person, it digs a hole with its tail to make its escape. If you happen to find one, conspokeIder yourself lucky.",
+      desc: "When it sees a person, it digs a hole with its tail to make its escape. If you happen to find one, consider yourself lucky.",
       evo: {},
       profile: {
         height: "1.5 m",
@@ -7631,7 +7641,7 @@ const Gen3Pokemon = [
         spe: 85
       },
       species: "Fly Scorpion Pokémon",
-      desc: "Gligar glpokeIdes through the air without a sound as if it were slpokeIding. This Pokémon hangs on to the face of its foe using its clawed hind legs and the large pincers on its forelegs, then injects the prey with its poison barb.",
+      desc: "Gligar glides through the air without a sound as if it were sliding. This Pokémon hangs on to the face of its foe using its clawed hind legs and the large pincers on its forelegs, then injects the prey with its poison barb.",
       evo: { next: [["472", "hold Razor Fang, Nighttime"]] },
       profile: {
         height: "1.1 m",
@@ -7705,14 +7715,14 @@ const Gen3Pokemon = [
         spe: 30
       },
       species: "Fairy Pokémon",
-      desc: "In contrast to its appearance, it’s quite timpokeId. When playing with other puppy Pokémon, it sometimes gets bullied.",
+      desc: "In contrast to its appearance, it’s quite timid. When playing with other puppy Pokémon, it sometimes gets bullied.",
       evo: { next: [["210", "Level 23"]] },
       profile: {
         height: "0.6 m",
         weight: "7.8 kg",
         egg: ["Field", "Fairy"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Run Away", "false"],
           ["Rattled", "true"]
         ],
@@ -7742,14 +7752,14 @@ const Gen3Pokemon = [
         spe: 45
       },
       species: "Fairy Pokémon",
-      desc: "Although it’s popular with young people, Granbull is timpokeId and sensitive, so it’s totally incompetent as a watchdog.",
+      desc: "Although it’s popular with young people, Granbull is timid and sensitive, so it’s totally incompetent as a watchdog.",
       evo: { "prev": ["209", "Level 23"] },
       profile: {
         height: "1.4 m",
         weight: "48.7 kg",
         egg: ["Field", "Fairy"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Quick Feet", "false"],
           ["Rattled", "true"]
         ],
@@ -7788,7 +7798,7 @@ const Gen3Pokemon = [
         ability: [
           ["Poison Point", "false"],
           ["Swift Swim", "false"],
-          ["IntimpokeIdate", "true"]
+          ["Intimidate", "true"]
         ],
         gender: "50:50"
       },
@@ -7816,7 +7826,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Pincer Pokémon",
-      desc: "Once it has pokeIdentified something as an enemy, it will continue beating them with its steel-hard pincers until there’s nothing left but scraps.",
+      desc: "Once it has identified something as an enemy, it will continue beating them with its steel-hard pincers until there’s nothing left but scraps.",
       evo: { "prev": ["123", "trade holding Metal Coat"] },
       profile: {
         height: "1.8 m",
@@ -7853,7 +7863,7 @@ const Gen3Pokemon = [
         spe: 5
       },
       species: "Mold Pokémon",
-      desc: "Shuckle quietly hpokeIdes itself under rocks, keeping its body concealed inspokeIde its hard shell while eating berries it has stored away. The berries mix with its body flupokeIds to become a juice.",
+      desc: "Shuckle quietly hides itself under rocks, keeping its body concealed inside its hard shell while eating berries it has stored away. The berries mix with its body fluids to become a juice.",
       evo: {},
       profile: {
         height: "0.6 m",
@@ -8001,7 +8011,7 @@ const Gen3Pokemon = [
         spe: 55
       },
       species: "Hibernator Pokémon",
-      desc: "In the forests inhabited by Ursaring, it is sapokeId that there are many streams and towering trees where they gather food. This Pokémon walks through its forest gathering food every day.",
+      desc: "In the forests inhabited by Ursaring, it is said that there are many streams and towering trees where they gather food. This Pokémon walks through its forest gathering food every day.",
       evo: { "prev": ["216", "Level 30"] },
       profile: {
         height: "1.8 m",
@@ -8211,10 +8221,10 @@ const Gen3Pokemon = [
     {
       pokeId: 223,
       name: {
-        english: "RemorapokeId",
+        english: "Remoraid",
         japanese: "テッポウオ",
         chinese: "铁炮鱼",
-        french: "RémorapokeId"
+        french: "Rémoraid"
       },
       type: ["Water"],
       base: {
@@ -8338,7 +8348,7 @@ const Gen3Pokemon = [
       },
       species: "Kite Pokémon",
       desc: "Many people have taken up surfing because they admire how magnificently Mantine swims.",
-      evo: { "prev": ["458", "with RemorapokeId in party"] },
+      evo: { "prev": ["458", "with Remoraid in party"] },
       profile: {
         height: "2.1 m",
         weight: "220 kg",
@@ -8448,7 +8458,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Dark Pokémon",
-      desc: "pokeIdentifiable by its eerie howls, people a long time ago thought it was the grim reaper and feared it.",
+      desc: "identifiable by its eerie howls, people a long time ago thought it was the grim reaper and feared it.",
       evo: { "prev": ["228", "Level 24"] },
       profile: {
         height: "1.4 m",
@@ -8485,7 +8495,7 @@ const Gen3Pokemon = [
         spe: 85
       },
       species: "Dragon Pokémon",
-      desc: "Kingdra sleeps on the seafloor where it is otherwise devopokeId of life. When a storm arrives, the Pokémon is sapokeId to awaken and wander about in search of prey.",
+      desc: "Kingdra sleeps on the seafloor where it is otherwise devoid of life. When a storm arrives, the Pokémon is said to awaken and wander about in search of prey.",
       evo: { "prev": ["117", "trade holding Dragon Scale"] },
       profile: {
         height: "1.8 m",
@@ -8558,7 +8568,7 @@ const Gen3Pokemon = [
         spe: 50
       },
       species: "Armor Pokémon",
-      desc: "If Donphan were to tackle with its hard body, even a house could be destroyed. Using its massive strength, the Pokémon helps clear rock and mud slpokeIdes that block mountain trails.",
+      desc: "If Donphan were to tackle with its hard body, even a house could be destroyed. Using its massive strength, the Pokémon helps clear rock and mud slides that block mountain trails.",
       evo: { "prev": ["231", "Level 25"] },
       profile: {
         height: "1.1 m",
@@ -8641,7 +8651,7 @@ const Gen3Pokemon = [
         weight: "71.2 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Frisk", "false"],
           ["Sap Sipper", "true"]
         ],
@@ -8671,7 +8681,7 @@ const Gen3Pokemon = [
         spe: 75
       },
       species: "Painter Pokémon",
-      desc: "It draws symbols with the flupokeId that oozes from the tip of its tail. Depending on the symbol, Smeargle fanatics will pay big money for them.",
+      desc: "It draws symbols with the fluid that oozes from the tip of its tail. Depending on the symbol, Smeargle fanatics will pay big money for them.",
       evo: {},
       profile: {
         height: "1.2 m",
@@ -8758,7 +8768,7 @@ const Gen3Pokemon = [
         weight: "48 kg",
         egg: ["Human-Like"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Technician", "false"],
           ["Steadfast", "true"]
         ],
@@ -8810,10 +8820,10 @@ const Gen3Pokemon = [
     {
       pokeId: 239,
       name: {
-        english: "ElekpokeId",
+        english: "Elekid",
         japanese: "エレキッド",
         chinese: "电击怪",
-        french: "ÉlekpokeId"
+        french: "Élekid"
       },
       type: ["Electric"],
       base: {
@@ -9220,7 +9230,7 @@ const Gen3Pokemon = [
         spe: 90
       },
       species: "Rainbow Pokémon",
-      desc: "Ho-Oh’s feathers glow in seven colors depending on the angle at which they are struck by light. These feathers are sapokeId to bring happiness to the bearers. This Pokémon is sapokeId to live at the foot of a rainbow.",
+      desc: "Ho-Oh’s feathers glow in seven colors depending on the angle at which they are struck by light. These feathers are said to bring happiness to the bearers. This Pokémon is said to live at the foot of a rainbow.",
       evo: {},
       profile: {
         height: "3.8 m",
@@ -9361,7 +9371,7 @@ const Gen3Pokemon = [
         spe: 120
       },
       species: "Forest Pokémon",
-      desc: "Sceptile has seeds growing on its back. They are sapokeId to be bursting with nutrients that revitalize trees. This Pokémon raises the trees in a forest with loving care.",
+      desc: "Sceptile has seeds growing on its back. They are said to be bursting with nutrients that revitalize trees. This Pokémon raises the trees in a forest with loving care.",
       evo: { "prev": ["253", "Level 36"] },
       profile: {
         height: "1.7 m",
@@ -9397,7 +9407,7 @@ const Gen3Pokemon = [
         spe: 45
       },
       species: "Chick Pokémon",
-      desc: "Torchic has a place inspokeIde its body where it keeps its flame. Give it a hug—it will be glowing with warmth. This Pokémon is covered all over by a fluffy coat of down.",
+      desc: "Torchic has a place inside its body where it keeps its flame. Give it a hug—it will be glowing with warmth. This Pokémon is covered all over by a fluffy coat of down.",
       evo: { next: [["256", "Level 16"]] },
       profile: {
         height: "0.4 m",
@@ -9577,7 +9587,7 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Mud Fish Pokémon",
-      desc: "Swampert predicts storms by sensing subtle differences in the sounds of waves and tpokeIdal winds with its fins. If a storm is approaching, it piles up boulders to protect itself.",
+      desc: "Swampert predicts storms by sensing subtle differences in the sounds of waves and tidal winds with its fins. If a storm is approaching, it piles up boulders to protect itself.",
       evo: { "prev": ["259", "Level 36"] },
       profile: {
         height: "1.5 m",
@@ -9613,7 +9623,7 @@ const Gen3Pokemon = [
         spe: 35
       },
       species: "Bite Pokémon",
-      desc: "Poochyena is an omnivore—it will eat anything. A distinguishing feature is how large its fangs are compared to its body. This Pokémon tries to intimpokeIdate its foes by making the hair on its tail bristle out.",
+      desc: "Poochyena is an omnivore—it will eat anything. A distinguishing feature is how large its fangs are compared to its body. This Pokémon tries to intimidate its foes by making the hair on its tail bristle out.",
       evo: { next: [["262", "Level 18"]] },
       profile: {
         height: "0.5 m",
@@ -9657,7 +9667,7 @@ const Gen3Pokemon = [
         weight: "37 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Quick Feet", "false"],
           ["Moxie", "true"]
         ],
@@ -9841,7 +9851,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Butterfly Pokémon",
-      desc: "Beautifly has a long mouth like a coiled needle, which is very convenient for collecting pollen from flowers. This Pokémon rpokeIdes the spring winds as it flits around gathering pollen.",
+      desc: "Beautifly has a long mouth like a coiled needle, which is very convenient for collecting pollen from flowers. This Pokémon rides the spring winds as it flits around gathering pollen.",
       evo: { "prev": ["266", "Level 10"] },
       profile: {
         height: "1 m",
@@ -9949,7 +9959,7 @@ const Gen3Pokemon = [
         spe: 30
       },
       species: "Water Weed Pokémon",
-      desc: "Lotad is sapokeId to have dwelled on land before. However, this Pokémon is thought to have returned to water because the leaf on its head grew large and heavy. It now lives by floating atop the water.",
+      desc: "Lotad is said to have dwelled on land before. However, this Pokémon is thought to have returned to water because the leaf on its head grew large and heavy. It now lives by floating atop the water.",
       evo: { next: [["271", "Level 14"]] },
       profile: {
         height: "0.5 m",
@@ -10434,7 +10444,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Pond Skater Pokémon",
-      desc: "It lives in ponds and marshes that feature lots of plant life. It often fights with DewppokeIder, whose habitat and diet are similar.",
+      desc: "It lives in ponds and marshes that feature lots of plant life. It often fights with Dewpider, whose habitat and diet are similar.",
       evo: { next: [["284", "Level 22"]] },
       profile: {
         height: "0.5 m",
@@ -10477,7 +10487,7 @@ const Gen3Pokemon = [
         weight: "3.6 kg",
         egg: ["Water 1", "Bug"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Unnerve", "true"]
         ],
         gender: "50:50"
@@ -10679,7 +10689,7 @@ const Gen3Pokemon = [
         spe: 40
       },
       species: "Trainee Pokémon",
-      desc: "Nincada lives underground. It uses its sharp claws to carve the roots of trees and absorb moisture and nutrients. This Pokémon can’t withstand bright sunlight so avopokeIds it.",
+      desc: "Nincada lives underground. It uses its sharp claws to carve the roots of trees and absorb moisture and nutrients. This Pokémon can’t withstand bright sunlight so avoids it.",
       evo: {
         next: [
           ["291", "Level 20"],
@@ -10720,7 +10730,7 @@ const Gen3Pokemon = [
         spe: 160
       },
       species: "Ninja Pokémon",
-      desc: "If Ninjask is not trained properly, it will refuse to obey the Trainer and cry loudly continuously. Because of this quality, this Pokémon is sapokeId to be one that puts the Trainer’s abilities to the test.",
+      desc: "If Ninjask is not trained properly, it will refuse to obey the Trainer and cry loudly continuously. Because of this quality, this Pokémon is said to be one that puts the Trainer’s abilities to the test.",
       evo: { "prev": ["290", "Level 20"] },
       profile: {
         height: "0.8 m",
@@ -10791,7 +10801,7 @@ const Gen3Pokemon = [
         spe: 28
       },
       species: "Whisper Pokémon",
-      desc: "Whismur is very timpokeId. If it starts to cry loudly, it becomes startled by its own crying and cries even harder. When it finally stops crying, the Pokémon goes to sleep, all tired out.",
+      desc: "Whismur is very timid. If it starts to cry loudly, it becomes startled by its own crying and cries even harder. When it finally stops crying, the Pokémon goes to sleep, all tired out.",
       evo: { next: [["294", "Level 20"]] },
       profile: {
         height: "0.6 m",
@@ -10827,7 +10837,7 @@ const Gen3Pokemon = [
         spe: 48
       },
       species: "Big Voice Pokémon",
-      desc: "Loudred shouts while stamping its feet. After it finishes shouting, this Pokémon becomes incapable of hearing anything for a while. This is conspokeIdered to be a weak point.",
+      desc: "Loudred shouts while stamping its feet. After it finishes shouting, this Pokémon becomes incapable of hearing anything for a while. This is considered to be a weak point.",
       evo: { "prev": ["293", "Level 20"], next: [["295", "Level 40"]] },
       profile: {
         height: "1 m",
@@ -11121,7 +11131,7 @@ const Gen3Pokemon = [
         spe: 50
       },
       species: "Darkness Pokémon",
-      desc: "Materials from gems it has eaten float to the surface of its body and can form an infinite number of patterns among indivpokeIduals.",
+      desc: "Materials from gems it has eaten float to the surface of its body and can form an infinite number of patterns among individuals.",
       evo: {},
       profile: {
         height: "0.5 m",
@@ -11166,7 +11176,7 @@ const Gen3Pokemon = [
         egg: ["Field", "Fairy"],
         ability: [
           ["Hyper Cutter", "false"],
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Sheer Force", "true"]
         ],
         gender: "50:50"
@@ -11183,7 +11193,7 @@ const Gen3Pokemon = [
         english: "Aron",
         japanese: "ココドラ",
         chinese: "可可多拉",
-        french: "GalekpokeId"
+        french: "Galekid"
       },
       type: ["Steel", "Rock"],
       base: {
@@ -11269,7 +11279,7 @@ const Gen3Pokemon = [
         spe: 50
       },
       species: "Iron Armor Pokémon",
-      desc: "Aggron is protective of its environment. If its mountain is ravaged by a landslpokeIde or a fire, this Pokémon will haul topsoil to the area, plant trees, and beautifully restore its own territory.",
+      desc: "Aggron is protective of its environment. If its mountain is ravaged by a landslide or a fire, this Pokémon will haul topsoil to the area, plant trees, and beautifully restore its own territory.",
       evo: { "prev": ["305", "Level 42"] },
       profile: {
         height: "2.1 m",
@@ -11561,7 +11571,7 @@ const Gen3Pokemon = [
         spe: 85
       },
       species: "Firefly Pokémon",
-      desc: "Illumise leads a flight of illuminated Volbeat to draw signs in the night sky. This Pokémon is sapokeId to earn greater respect from its peers by composing more complex designs in the sky.",
+      desc: "Illumise leads a flight of illuminated Volbeat to draw signs in the night sky. This Pokémon is said to earn greater respect from its peers by composing more complex designs in the sky.",
       evo: {},
       profile: {
         height: "0.6 m",
@@ -11598,7 +11608,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Thorn Pokémon",
-      desc: "On extremely rare occasions, a Roselia is sapokeId to appear with its flowers in unusual colors. The thorns on this Pokémon’s head contain a vicious poison.",
+      desc: "On extremely rare occasions, a Roselia is said to appear with its flowers in unusual colors. The thorns on this Pokémon’s head contain a vicious poison.",
       evo: {
         "prev": ["406", "high Friendship, Daytime"],
         next: [["407", "use Shiny Stone"]]
@@ -11645,7 +11655,7 @@ const Gen3Pokemon = [
         weight: "10.3 kg",
         egg: ["Amorphous"],
         ability: [
-          ["LiqupokeId Ooze", "false"],
+          ["Liquid Ooze", "false"],
           ["Sticky Hold", "false"],
           ["Gluttony", "true"]
         ],
@@ -11675,14 +11685,14 @@ const Gen3Pokemon = [
         spe: 55
       },
       species: "Poison Bag Pokémon",
-      desc: "Swalot has no teeth, so what it eats, it swallows whole, no matter what. Its cavernous mouth yawns wpokeIdely. An automobile tire could easily fit inspokeIde this Pokémon’s mouth.",
+      desc: "Swalot has no teeth, so what it eats, it swallows whole, no matter what. Its cavernous mouth yawns widely. An automobile tire could easily fit inside this Pokémon’s mouth.",
       evo: { "prev": ["316", "Level 26"] },
       profile: {
         height: "1.7 m",
         weight: "80 kg",
         egg: ["Amorphous"],
         ability: [
-          ["LiqupokeId Ooze", "false"],
+          ["Liquid Ooze", "false"],
           ["Sticky Hold", "false"],
           ["Gluttony", "true"]
         ],
@@ -11903,7 +11913,7 @@ const Gen3Pokemon = [
         egg: ["Field"],
         ability: [
           ["Magma Armor", "false"],
-          ["SolpokeId Rock", "false"],
+          ["Solid Rock", "false"],
           ["Anger Point", "true"]
         ],
         gender: "50:50"
@@ -12183,7 +12193,7 @@ const Gen3Pokemon = [
         spe: 35
       },
       species: "Cactus Pokémon",
-      desc: "The more arpokeId and harsh the environment, the more pretty and fragrant a flower Cacnea grows. This Pokémon battles by wildly swinging its thorny arms.",
+      desc: "The more arid and harsh the environment, the more pretty and fragrant a flower Cacnea grows. This Pokémon battles by wildly swinging its thorny arms.",
       evo: { next: [["332", "Level 32"]] },
       profile: {
         height: "0.4 m",
@@ -12219,7 +12229,7 @@ const Gen3Pokemon = [
         spe: 55
       },
       species: "Scarecrow Pokémon",
-      desc: "If a traveler is going through a desert in the thick of night, Cacturne will follow in a ragtag group. The Pokémon are bpokeIding their time, waiting for the traveler to tire and become incapable of moving.",
+      desc: "If a traveler is going through a desert in the thick of night, Cacturne will follow in a ragtag group. The Pokémon are biding their time, waiting for the traveler to tire and become incapable of moving.",
       evo: { "prev": ["331", "Level 32"] },
       profile: {
         height: "1.3 m",
@@ -12399,7 +12409,7 @@ const Gen3Pokemon = [
         spe: 70
       },
       species: "Meteorite Pokémon",
-      desc: "Lunatone becomes active around the time of the full moon. Instead of walking, it moves by floating in mpokeIdair. The Pokémon’s intimpokeIdating red eyes cause all those who see it to become transfixed with fear.",
+      desc: "Lunatone becomes active around the time of the full moon. Instead of walking, it moves by floating in midair. The Pokémon’s intimidating red eyes cause all those who see it to become transfixed with fear.",
       evo: {},
       profile: {
         height: "1 m",
@@ -12432,7 +12442,7 @@ const Gen3Pokemon = [
         spe: 70
       },
       species: "Meteorite Pokémon",
-      desc: "Sunlight is the source of Solrock’s power. It is sapokeId to possess the ability to read the emotions of others. This Pokémon gives off intense heat while rotating its body.",
+      desc: "Sunlight is the source of Solrock’s power. It is said to possess the ability to read the emotions of others. This Pokémon gives off intense heat while rotating its body.",
       evo: {},
       profile: {
         height: "1.2 m",
@@ -12715,7 +12725,7 @@ const Gen3Pokemon = [
         spe: 43
       },
       species: "Barnacle Pokémon",
-      desc: "This carnivorous Pokémon lived in primordial seas. It catches prey in its eight tentacles and dissolves them with digestive flupokeId as it eats.",
+      desc: "This carnivorous Pokémon lived in primordial seas. It catches prey in its eight tentacles and dissolves them with digestive fluid as it eats.",
       evo: { "prev": ["345", "Level 40"] },
       profile: {
         height: "1.5 m",
@@ -12864,7 +12874,7 @@ const Gen3Pokemon = [
         spe: 81
       },
       species: "Tender Pokémon",
-      desc: "Its dwelling place is the bottom of big lakes. Those who behold its loveliness are sapokeId to have their hearts purified.",
+      desc: "Its dwelling place is the bottom of big lakes. Those who behold its loveliness are said to have their hearts purified.",
       evo: {
         "prev": ["349", "trade holding Prism Scale, or level up with max Beauty"]
       },
@@ -13046,7 +13056,7 @@ const Gen3Pokemon = [
         spe: 25
       },
       species: "Requiem Pokémon",
-      desc: "Duskull wanders lost among the deep darkness of mpokeIdnight. There is an oft-told admonishment given to misbehaving children that this Pokémon will spirit away bad children who earn scoldings from their mothers.",
+      desc: "Duskull wanders lost among the deep darkness of midnight. There is an oft-told admonishment given to misbehaving children that this Pokémon will spirit away bad children who earn scoldings from their mothers.",
       evo: { next: [["356", "Level 37"]] },
       profile: {
         height: "0.8 m",
@@ -13082,7 +13092,7 @@ const Gen3Pokemon = [
         spe: 25
       },
       species: "Beckon Pokémon",
-      desc: "Dusclops absorbs anything, however large the object may be. This Pokémon hypnotizes its foe by waving its hands in a macabre manner and by bringing its single eye to bear. The hypnotized foe is made to do Dusclops’s bpokeIdding.",
+      desc: "Dusclops absorbs anything, however large the object may be. This Pokémon hypnotizes its foe by waving its hands in a macabre manner and by bringing its single eye to bear. The hypnotized foe is made to do Dusclops’s bidding.",
       evo: {
         "prev": ["355", "Level 37"],
         next: [["477", "trade holding Reaper Cloth"]]
@@ -13417,7 +13427,7 @@ const Gen3Pokemon = [
         spe: 65
       },
       species: "Ice Break Pokémon",
-      desc: "Walrein swims all over in frigpokeId seawater while crushing icebergs with its grand, imposing tusks. Its thick layer of blubber makes enemy attacks bounce off harmlessly.",
+      desc: "Walrein swims all over in frigid seawater while crushing icebergs with its grand, imposing tusks. Its thick layer of blubber makes enemy attacks bounce off harmlessly.",
       evo: { "prev": ["364", "Level 44"] },
       profile: {
         height: "1.4 m",
@@ -13531,7 +13541,7 @@ const Gen3Pokemon = [
         spe: 52
       },
       species: "South Sea Pokémon",
-      desc: "It sucks bodily flupokeIds out of its prey. The leftover meat sinks to the seafloor, where it becomes food for other Pokémon.",
+      desc: "It sucks bodily fluids out of its prey. The leftover meat sinks to the seafloor, where it becomes food for other Pokémon.",
       evo: { "prev": ["366", "trade holding Deep Sea Scale"] },
       profile: {
         height: "1.8 m",
@@ -13719,7 +13729,7 @@ const Gen3Pokemon = [
         weight: "102.6 kg",
         egg: ["Dragon"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Moxie", "true"]
         ],
         gender: "50:50"
@@ -13892,7 +13902,7 @@ const Gen3Pokemon = [
         spe: 50
       },
       species: "Iceberg Pokémon",
-      desc: "Regice cloaks itself with frigpokeId air of -328 degrees Fahrenheit. Things will freeze solpokeId just by going near this Pokémon. Its icy body is so cold, it will not melt even if it is immersed in magma.",
+      desc: "Regice cloaks itself with frigid air of -328 degrees Fahrenheit. Things will freeze solid just by going near this Pokémon. Its icy body is so cold, it will not melt even if it is immersed in magma.",
       evo: {},
       profile: {
         height: "1.8 m",
@@ -14030,7 +14040,7 @@ const Gen3Pokemon = [
         spe: 90
       },
       species: "Sea Basin Pokémon",
-      desc: "Kyogre is sapokeId to be the personification of the sea itself. Legends tell of its many clashes against Groudon, as each sought to gain the power of nature.",
+      desc: "Kyogre is said to be the personification of the sea itself. Legends tell of its many clashes against Groudon, as each sought to gain the power of nature.",
       evo: {},
       profile: {
         height: "4.5 m",
@@ -14096,7 +14106,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Sky High Pokémon",
-      desc: "It flies forever through the ozone layer, consuming meteoropokeIds for sustenance. The many meteoropokeIds in its body provpokeIde the energy it needs to Mega Evolve.",
+      desc: "It flies forever through the ozone layer, consuming meteoroids for sustenance. The many meteoroids in its body provide the energy it needs to Mega Evolve.",
       evo: {},
       profile: {
         height: "7 m",
@@ -14129,7 +14139,7 @@ const Gen3Pokemon = [
         spe: 100
       },
       species: "Wish Pokémon",
-      desc: "Jirachi will awaken from its sleep of a thousand years if you sing to it in a voice of purity. It is sapokeId to make true any wish that people desire.",
+      desc: "Jirachi will awaken from its sleep of a thousand years if you sing to it in a voice of purity. It is said to make true any wish that people desire.",
       evo: {},
       profile: {
         height: "0.3 m",
@@ -14555,14 +14565,14 @@ const Gen3Pokemon = [
         spe: 80
       },
       species: "Starling Pokémon",
-      desc: "It lives in forests and fields. Squabbles over territory occur when flocks collpokeIde.",
+      desc: "It lives in forests and fields. Squabbles over territory occur when flocks collide.",
       evo: { "prev": ["396", "Level 14"], next: [["398", "Level 34"]] },
       profile: {
         height: "0.6 m",
         weight: "15.5 kg",
         egg: ["Flying"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Reckless", "true"]
         ],
         gender: "50:50"
@@ -14598,7 +14608,7 @@ const Gen3Pokemon = [
         weight: "24.9 kg",
         egg: ["Flying"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Reckless", "true"]
         ],
         gender: "50:50"
@@ -14612,7 +14622,7 @@ const Gen3Pokemon = [
     {
       pokeId: 399,
       name: {
-        english: "BpokeIdoof",
+        english: "Bidoof",
         japanese: "ビッパ",
         chinese: "大牙狸",
         french: "Keunotor"
@@ -14627,7 +14637,7 @@ const Gen3Pokemon = [
         spe: 31
       },
       species: "Plump Mouse Pokémon",
-      desc: "It constantly gnaws on logs and rocks to whittle down its front teeth. It nests alongspokeIde water.",
+      desc: "It constantly gnaws on logs and rocks to whittle down its front teeth. It nests alongside water.",
       evo: { next: [["400", "Level 15"]] },
       profile: {
         height: "0.5 m",
@@ -14781,7 +14791,7 @@ const Gen3Pokemon = [
         egg: ["Field"],
         ability: [
           ["Rivalry", "false"],
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Guts", "true"]
         ],
         gender: "50:50"
@@ -14818,7 +14828,7 @@ const Gen3Pokemon = [
         egg: ["Field"],
         ability: [
           ["Rivalry", "false"],
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Guts", "true"]
         ],
         gender: "50:50"
@@ -14855,7 +14865,7 @@ const Gen3Pokemon = [
         egg: ["Field"],
         ability: [
           ["Rivalry", "false"],
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Guts", "true"]
         ],
         gender: "50:50"
@@ -14943,10 +14953,10 @@ const Gen3Pokemon = [
     {
       pokeId: 408,
       name: {
-        english: "CranpokeIdos",
+        english: "Cranidos",
         japanese: "ズガイドス",
         chinese: "头盖龙",
-        french: "KranpokeIdos"
+        french: "Kranidos"
       },
       type: ["Rock"],
       base: {
@@ -14994,7 +15004,7 @@ const Gen3Pokemon = [
         spe: 58
       },
       species: "Head Butt Pokémon",
-      desc: "This ancient Pokémon used headbutts skillfully. Its brain was really small, so some theories suggest that its stuppokeIdity led to its extinction.",
+      desc: "This ancient Pokémon used headbutts skillfully. Its brain was really small, so some theories suggest that its stupidity led to its extinction.",
       evo: { "prev": ["408", "Level 30"] },
       profile: {
         height: "1.6 m",
@@ -15462,7 +15472,7 @@ const Gen3Pokemon = [
         spe: 34
       },
       species: "Sea Slug Pokémon",
-      desc: "When it senses danger, a purple liqupokeId oozes out of it. The liqupokeId is thought to be something like greasy sweat.",
+      desc: "When it senses danger, a purple liquid oozes out of it. The liquid is thought to be something like greasy sweat.",
       evo: { next: [["423", "Level 30"]] },
       profile: {
         height: "0.3 m",
@@ -15524,7 +15534,7 @@ const Gen3Pokemon = [
         english: "Ambipom",
         japanese: "エテボース",
         chinese: "双尾怪手",
-        french: "CappokeIdextre"
+        french: "Capidextre"
       },
       type: ["Normal"],
       base: {
@@ -15610,7 +15620,7 @@ const Gen3Pokemon = [
         spe: 80
       },
       species: "Blimp Pokémon",
-      desc: "The raw material for the gas inspokeIde its body is souls. When its body starts to deflate, it’s thought to carry away people and Pokémon.",
+      desc: "The raw material for the gas inside its body is souls. When its body starts to deflate, it’s thought to carry away people and Pokémon.",
       evo: { "prev": ["425", "Level 28"] },
       profile: {
         height: "1.2 m",
@@ -15828,7 +15838,7 @@ const Gen3Pokemon = [
         spe: 112
       },
       species: "Tiger Cat Pokémon",
-      desc: "To make itself appear intimpokeIdatingly beefy, it tightly cinches its waist with its twin tails.",
+      desc: "To make itself appear intimidatingly beefy, it tightly cinches its waist with its twin tails.",
       evo: { "prev": ["431", "Level 38"] },
       profile: {
         height: "1 m",
@@ -15865,7 +15875,7 @@ const Gen3Pokemon = [
         spe: 45
       },
       species: "Bell Pokémon",
-      desc: "There is an orb inspokeIde its mouth. When it hops, the orb bounces all over and makes a ringing sound.",
+      desc: "There is an orb inside its mouth. When it hops, the orb bounces all over and makes a ringing sound.",
       evo: { next: [["358", "high Friendship, Nighttime"]] },
       profile: {
         height: "0.2 m",
@@ -15898,7 +15908,7 @@ const Gen3Pokemon = [
         spe: 74
       },
       species: "Skunk Pokémon",
-      desc: "It protects itself by spraying a noxious flupokeId from its rear. The stench lingers for 24 hours.",
+      desc: "It protects itself by spraying a noxious fluid from its rear. The stench lingers for 24 hours.",
       evo: { next: [["435", "Level 34"]] },
       profile: {
         height: "0.4 m",
@@ -15935,7 +15945,7 @@ const Gen3Pokemon = [
         spe: 84
       },
       species: "Skunk Pokémon",
-      desc: "It sprays a stinky flupokeId from its tail. The flupokeId smells worse the longer it is allowed to fester.",
+      desc: "It sprays a stinky fluid from its tail. The fluid smells worse the longer it is allowed to fester.",
       evo: { "prev": ["434", "Level 34"] },
       profile: {
         height: "1 m",
@@ -16193,7 +16203,7 @@ const Gen3Pokemon = [
         spd: 108,
         spe: 35
       },
-      species: "ForbpokeIdden Pokémon",
+      species: "Forbidden Pokémon",
       desc: "It was bound to a fissure in an odd keystone as punishment for misdeeds 500 years ago.",
       evo: {},
       profile: {
@@ -16777,7 +16787,7 @@ const Gen3Pokemon = [
       },
       species: "Kite Pokémon",
       desc: "Mantyke are friendly toward people and will approach boats closely. The patterns on their backs differ depending on their habitat.",
-      evo: { next: [["226", "with RemorapokeId in party"]] },
+      evo: { next: [["226", "with Remoraid in party"]] },
       profile: {
         height: "1 m",
         weight: "65 kg",
@@ -16849,7 +16859,7 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Frost Tree Pokémon",
-      desc: "It lives a quiet life on mountains that are perpetually covered in snow. It hpokeIdes itself by whipping up blizzards.",
+      desc: "It lives a quiet life on mountains that are perpetually covered in snow. It hides itself by whipping up blizzards.",
       evo: { "prev": ["459", "Level 40"] },
       profile: {
         height: "2.2 m",
@@ -17003,7 +17013,7 @@ const Gen3Pokemon = [
         egg: ["Monster", "Field"],
         ability: [
           ["Lightning Rod", "false"],
-          ["SolpokeId Rock", "false"],
+          ["Solid Rock", "false"],
           ["Reckless", "true"]
         ],
         gender: "50:50"
@@ -17069,7 +17079,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Thunderbolt Pokémon",
-      desc: "A single Electivire can provpokeIde enough electricity for all the buildings in a big city for a year.",
+      desc: "A single Electivire can provide enough electricity for all the buildings in a big city for a year.",
       evo: { "prev": ["125", "trade holding Electirizer"] },
       profile: {
         height: "1.8 m",
@@ -17105,7 +17115,7 @@ const Gen3Pokemon = [
         spe: 83
       },
       species: "Blast Pokémon",
-      desc: "Magmortar takes down its enemies by shooting fireballs, which burn them to a blackened crisp. It avopokeIds this method when hunting prey.",
+      desc: "Magmortar takes down its enemies by shooting fireballs, which burn them to a blackened crisp. It avoids this method when hunting prey.",
       evo: { "prev": ["126", "trade holding Magmarizer"] },
       profile: {
         height: "1.6 m",
@@ -17141,7 +17151,7 @@ const Gen3Pokemon = [
         spe: 80
       },
       species: "Jubilee Pokémon",
-      desc: "It shares many blessings with people who respect one another’s rights and avopokeId needless strife.",
+      desc: "It shares many blessings with people who respect one another’s rights and avoid needless strife.",
       evo: { "prev": ["176", "use Shiny Stone"] },
       profile: {
         height: "1.5 m",
@@ -17507,7 +17517,7 @@ const Gen3Pokemon = [
         spe: 110
       },
       species: "Snow Land Pokémon",
-      desc: "It’s sapokeId that on nights of terrible blizzards, it comes down to human settlements. If you hear it knocking at your door, do not open it!",
+      desc: "It’s said that on nights of terrible blizzards, it comes down to human settlements. If you hear it knocking at your door, do not open it!",
       evo: { "prev": ["361", "use Dawn Stone, Female"] },
       profile: {
         height: "1.3 m",
@@ -17576,7 +17586,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Knowledge Pokémon",
-      desc: "It is sapokeId that its emergence gave humans the intelligence to improve their quality of life.",
+      desc: "It is said that its emergence gave humans the intelligence to improve their quality of life.",
       evo: {},
       profile: {
         height: "0.3 m",
@@ -17609,7 +17619,7 @@ const Gen3Pokemon = [
         spe: 80
       },
       species: "Emotion Pokémon",
-      desc: "It sleeps at the bottom of a lake. Its spirit is sapokeId to leave its body to fly on the lake’s surface.",
+      desc: "It sleeps at the bottom of a lake. Its spirit is said to leave its body to fly on the lake’s surface.",
       evo: {},
       profile: {
         height: "0.3 m",
@@ -17852,7 +17862,7 @@ const Gen3Pokemon = [
         spe: 85
       },
       species: "Lunar Pokémon",
-      desc: "Those who sleep holding Cresselia’s feather are assured of joyful dreams. It is sapokeId to represent the crescent moon.",
+      desc: "Those who sleep holding Cresselia’s feather are assured of joyful dreams. It is said to represent the crescent moon.",
       evo: {},
       profile: {
         height: "1.5 m",
@@ -17984,7 +17994,7 @@ const Gen3Pokemon = [
         spe: 100
       },
       species: "Gratitude Pokémon",
-      desc: "The blooming of GracpokeIdea flowers confers the power of flight upon it. Feelings of gratitude are the message it delivers.",
+      desc: "The blooming of Gracidea flowers confers the power of flight upon it. Feelings of gratitude are the message it delivers.",
       evo: {},
       profile: {
         height: "0.2 m",
@@ -18370,7 +18380,7 @@ const Gen3Pokemon = [
         spd: 70,
         spe: 70
       },
-      species: "FormpokeIdable Pokémon",
+      species: "Formidable Pokémon",
       desc: "One swing of the sword incorporated in its armor can fell an opponent. A simple glare from one of them quiets everybody.",
       evo: { "prev": ["502", "Level 36"] },
       profile: {
@@ -18525,7 +18535,7 @@ const Gen3Pokemon = [
         weight: "14.7 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Sand Rush", "false"],
           ["Scrappy", "true"]
         ],
@@ -18562,7 +18572,7 @@ const Gen3Pokemon = [
         weight: "61 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Sand Rush", "false"],
           ["Scrappy", "true"]
         ],
@@ -18810,7 +18820,7 @@ const Gen3Pokemon = [
         spe: 64
       },
       species: "Spray Pokémon",
-      desc: "The water stored inspokeIde the tuft on its head is full of nutrients. Plants that receive its water grow large.",
+      desc: "The water stored inside the tuft on its head is full of nutrients. Plants that receive its water grow large.",
       evo: { next: [["516", "use Water Stone"]] },
       profile: {
         height: "0.6 m",
@@ -18941,7 +18951,7 @@ const Gen3Pokemon = [
     {
       pokeId: 519,
       name: {
-        english: "PpokeIdove",
+        english: "Pidove",
         japanese: "マメパト",
         chinese: "豆豆鸽",
         french: "Poichigeon"
@@ -19252,7 +19262,7 @@ const Gen3Pokemon = [
         spe: 72
       },
       species: "Bat Pokémon",
-      desc: "The heart-shaped mark left on a body after a Woobat has been attached to it is sapokeId to bring good fortune.",
+      desc: "The heart-shaped mark left on a body after a Woobat has been attached to it is said to bring good fortune.",
       evo: { next: [["528", "high Friendship"]] },
       profile: {
         height: "0.4 m",
@@ -19622,7 +19632,7 @@ const Gen3Pokemon = [
         spe: 74
       },
       species: "Vibration Pokémon",
-      desc: "They shoot paralyzing liqupokeId from their head bumps. They use vibration to hurt their opponents.",
+      desc: "They shoot paralyzing liquid from their head bumps. They use vibration to hurt their opponents.",
       evo: { "prev": ["536", "Level 36"] },
       profile: {
         height: "1.5 m",
@@ -19872,7 +19882,7 @@ const Gen3Pokemon = [
         english: "Whirlipede",
         japanese: "ホイーガ",
         chinese: "车轮球",
-        french: "ScobolpokeIde"
+        french: "Scobolide"
       },
       type: ["Bug", "Poison"],
       base: {
@@ -20150,7 +20160,7 @@ const Gen3Pokemon = [
         weight: "15.2 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Moxie", "false"],
           ["Anger Point", "true"]
         ],
@@ -20187,7 +20197,7 @@ const Gen3Pokemon = [
         weight: "33.4 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Moxie", "false"],
           ["Anger Point", "true"]
         ],
@@ -20216,7 +20226,7 @@ const Gen3Pokemon = [
         spd: 70,
         spe: 92
       },
-      species: "IntimpokeIdation Pokémon",
+      species: "Intimidation Pokémon",
       desc: "It conceals itself in sandstorms that Flygon whip up and waits patiently for prey to appear.",
       evo: { "prev": ["552", "Level 40"] },
       profile: {
@@ -20224,7 +20234,7 @@ const Gen3Pokemon = [
         weight: "96.3 kg",
         egg: ["Field"],
         ability: [
-          ["IntimpokeIdate", "false"],
+          ["Intimidate", "false"],
           ["Moxie", "false"],
           ["Anger Point", "true"]
         ],
@@ -20326,7 +20336,7 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Cactus Pokémon",
-      desc: "ArpokeId regions are their habitat. They move rhythmically, making a sound similar to maracas.",
+      desc: "Arid regions are their habitat. They move rhythmically, making a sound similar to maracas.",
       evo: {},
       profile: {
         height: "1 m",
@@ -20363,7 +20373,7 @@ const Gen3Pokemon = [
         spe: 55
       },
       species: "Rock Inn Pokémon",
-      desc: "When it finds a stone of a suitable size, it secretes a liqupokeId from its mouth to open up a hole to crawl into.",
+      desc: "When it finds a stone of a suitable size, it secretes a liquid from its mouth to open up a hole to crawl into.",
       evo: { next: [["558", "Level 34"]] },
       profile: {
         height: "0.3 m",
@@ -20446,7 +20456,7 @@ const Gen3Pokemon = [
         ability: [
           ["Shed Skin", "false"],
           ["Moxie", "false"],
-          ["IntimpokeIdate", "true"]
+          ["Intimidate", "true"]
         ],
         gender: "50:50"
       },
@@ -20483,7 +20493,7 @@ const Gen3Pokemon = [
         ability: [
           ["Shed Skin", "false"],
           ["Moxie", "false"],
-          ["IntimpokeIdate", "true"]
+          ["Intimidate", "true"]
         ],
         gender: "50:50"
       },
@@ -20510,7 +20520,7 @@ const Gen3Pokemon = [
         spd: 80,
         spe: 97
       },
-      species: "AvianopokeId Pokémon",
+      species: "Avianoid Pokémon",
       desc: "The guardians of an ancient city, they always fly the same route while keeping watch for invaders.",
       evo: {},
       profile: {
@@ -20581,7 +20591,7 @@ const Gen3Pokemon = [
         spe: 30
       },
       species: "Coffin Pokémon",
-      desc: "Grave robbers who mistake them for real coffins and get too close end up trapped inspokeIde their bodies.",
+      desc: "Grave robbers who mistake them for real coffins and get too close end up trapped inside their bodies.",
       evo: { "prev": ["562", "Level 34"] },
       profile: {
         height: "1.7 m",
@@ -20621,7 +20631,7 @@ const Gen3Pokemon = [
         weight: "16.5 kg",
         egg: ["Water 1", "Water 3"],
         ability: [
-          ["SolpokeId Rock", "false"],
+          ["Solid Rock", "false"],
           ["Sturdy", "false"],
           ["Swift Swim", "true"]
         ],
@@ -20658,7 +20668,7 @@ const Gen3Pokemon = [
         weight: "81 kg",
         egg: ["Water 1", "Water 3"],
         ability: [
-          ["SolpokeId Rock", "false"],
+          ["Solid Rock", "false"],
           ["Sturdy", "false"],
           ["Swift Swim", "true"]
         ],
@@ -20721,7 +20731,7 @@ const Gen3Pokemon = [
         spe: 110
       },
       species: "First Bird Pokémon",
-      desc: "SapokeId to be an ancestor of bird Pokémon, the muscles it uses to flap its wings are still weak, so it needs a long runway in order to take off.",
+      desc: "Said to be an ancestor of bird Pokémon, the muscles it uses to flap its wings are still weak, so it needs a long runway in order to take off.",
       evo: { "prev": ["566", "Level 37"] },
       profile: {
         height: "1.4 m",
@@ -20882,7 +20892,7 @@ const Gen3Pokemon = [
         english: "Minccino",
         japanese: "チラーミィ",
         chinese: "泡沫栗鼠",
-        french: "ChinchpokeIdou"
+        french: "Chinchidou"
       },
       type: ["Normal"],
       base: {
@@ -21030,7 +21040,7 @@ const Gen3Pokemon = [
         english: "Gothitelle",
         japanese: "ゴチルゼル",
         chinese: "哥德小姐",
-        french: "SpokeIdérella"
+        french: "Sidérella"
       },
       type: ["Psychic"],
       base: {
@@ -21116,7 +21126,7 @@ const Gen3Pokemon = [
         spe: 30
       },
       species: "Mitosis Pokémon",
-      desc: "When their two divpokeIded brains think the same thoughts, their psychic power is maximized.",
+      desc: "When their two divided brains think the same thoughts, their psychic power is maximized.",
       evo: { "prev": ["577", "Level 32"], next: [["579", "Level 41"]] },
       profile: {
         height: "0.6 m",
@@ -21227,7 +21237,7 @@ const Gen3Pokemon = [
         spe: 98
       },
       species: "White Bird Pokémon",
-      desc: "Swanna start to dance at dusk. The one dancing in the mpokeIddle is the leader of the flock.",
+      desc: "Swanna start to dance at dusk. The one dancing in the middle is the leader of the flock.",
       evo: { "prev": ["580", "Level 35"] },
       profile: {
         height: "1.3 m",
@@ -21778,7 +21788,7 @@ const Gen3Pokemon = [
         spd: 60,
         spe: 108
       },
-      species: "EleSppokeIder Pokémon",
+      species: "EleSpider Pokémon",
       desc: "When attacked, they create an electric barrier by spitting out many electrically charged threads.",
       evo: { "prev": ["595", "Level 36"] },
       profile: {
@@ -22098,7 +22108,7 @@ const Gen3Pokemon = [
         spe: 30
       },
       species: "Cerebral Pokémon",
-      desc: "This Pokémon is shrouded in mystery. It’s sapokeId to have appeared from a UFO that fell from the sky about 50 years ago.",
+      desc: "This Pokémon is shrouded in mystery. It’s said to have appeared from a UFO that fell from the sky about 50 years ago.",
       evo: { next: [["606", "Level 42"]] },
       profile: {
         height: "0.5 m",
@@ -23358,7 +23368,7 @@ const Gen3Pokemon = [
         english: "Virizion",
         japanese: "ビリジオン",
         chinese: "毕力吉翁",
-        french: "VirpokeIdium"
+        french: "Viridium"
       },
       type: ["Grass", "Fighting"],
       base: {
@@ -23577,7 +23587,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Boundary Pokémon",
-      desc: "It generates a powerful, freezing energy inspokeIde itself, but its body became frozen when the energy leaked out.",
+      desc: "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out.",
       evo: {},
       profile: {
         height: "3 m",
@@ -23817,7 +23827,7 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Fox Pokémon",
-      desc: "As it walks, it munches on a twig in place of a snack. It intimpokeIdates opponents by puffing hot air out of its ears.",
+      desc: "As it walks, it munches on a twig in place of a snack. It intimidates opponents by puffing hot air out of its ears.",
       evo: { next: [["654", "Level 16"]] },
       profile: {
         height: "0.4 m",
@@ -24203,7 +24213,7 @@ const Gen3Pokemon = [
         english: "Scatterbug",
         japanese: "コフキムシ",
         chinese: "粉蝶虫",
-        french: "LéppokeIdonille"
+        french: "Lépidonille"
       },
       type: ["Bug"],
       base: {
@@ -24399,7 +24409,7 @@ const Gen3Pokemon = [
         spe: 42
       },
       species: "Single Bloom Pokémon",
-      desc: "Flabébé wears a crown made from pollen it’s collected from its flower. The crown has hpokeIdden healing properties.",
+      desc: "Flabébé wears a crown made from pollen it’s collected from its flower. The crown has hidden healing properties.",
       evo: { next: [["670", "Level 19"]] },
       profile: {
         height: "0.1 m",
@@ -24474,7 +24484,7 @@ const Gen3Pokemon = [
         spe: 75
       },
       species: "Garden Pokémon",
-      desc: "Its life can span several hundred years. It’s sapokeId to devote its entire life to protecting gardens.",
+      desc: "Its life can span several hundred years. It’s said to devote its entire life to protecting gardens.",
       evo: { "prev": ["670", "use Shiny Stone"] },
       profile: {
         height: "1.1 m",
@@ -24495,7 +24505,7 @@ const Gen3Pokemon = [
     {
       pokeId: 672,
       name: {
-        english: "SkpokeIddo",
+        english: "Skiddo",
         japanese: "メェークル",
         chinese: "坐骑小羊",
         french: "Cabriolaine"
@@ -24546,7 +24556,7 @@ const Gen3Pokemon = [
         spe: 68
       },
       species: "Mount Pokémon",
-      desc: "They inhabit mountainous regions. The leader of the herd is decpokeIded by a battle of clashing horns.",
+      desc: "They inhabit mountainous regions. The leader of the herd is decided by a battle of clashing horns.",
       evo: { "prev": ["672", "Level 32"] },
       profile: {
         height: "1.7 m",
@@ -24582,7 +24592,7 @@ const Gen3Pokemon = [
         spe: 43
       },
       species: "Playful Pokémon",
-      desc: "It’s desperate to intimpokeIdate its opponents. Be nice and pretend to be scared if you catch it glaring at you intensely.",
+      desc: "It’s desperate to intimidate its opponents. Be nice and pretend to be scared if you catch it glaring at you intensely.",
       evo: { next: [["675", "Level 32, Dark type Pokémon in party"]] },
       profile: {
         height: "0.6 m",
@@ -24820,7 +24830,7 @@ const Gen3Pokemon = [
         english: "Aegislash",
         japanese: "ギルガルド",
         chinese: "坚盾剑怪",
-        french: "ExagpokeIde"
+        french: "Exagide"
       },
       type: ["Steel", "Ghost"],
       base: {
@@ -24901,7 +24911,7 @@ const Gen3Pokemon = [
         spe: 29
       },
       species: "Fragrance Pokémon",
-      desc: "Its scent is so overpowering that, unless a Trainer happens to really enjoy the smell, he or she will have a hard time walking alongspokeIde it.",
+      desc: "Its scent is so overpowering that, unless a Trainer happens to really enjoy the smell, he or she will have a hard time walking alongside it.",
       evo: { "prev": ["682", "trade holding Sachet"] },
       profile: {
         height: "0.8 m",
@@ -25010,7 +25020,7 @@ const Gen3Pokemon = [
       },
       species: "Revolving Pokémon",
       desc: "When exchanging information with others of its kind, it flashes the light-emitting spots on its body in a complex rhythm.",
-      evo: { next: [["687", "Level 30, holding console upspokeIde down"]] },
+      evo: { next: [["687", "Level 30, holding console upside down"]] },
       profile: {
         height: "0.4 m",
         weight: "3.5 kg",
@@ -25047,7 +25057,7 @@ const Gen3Pokemon = [
       },
       species: "Overturning Pokémon",
       desc: "It flashes the pattern on its torso to control its prey and draw them in. The edges of its fins are supremely sharp.",
-      evo: { "prev": ["686", "Level 30, holding console upspokeIde down"] },
+      evo: { "prev": ["686", "Level 30, holding console upside down"] },
       profile: {
         height: "1.5 m",
         weight: "47 kg",
@@ -25194,7 +25204,7 @@ const Gen3Pokemon = [
         spe: 44
       },
       species: "Mock Kelp Pokémon",
-      desc: "It blends in with seaweed to ambush its prey and then takes them down with a poisonous liqupokeId strong enough to melt metal.",
+      desc: "It blends in with seaweed to ambush its prey and then takes them down with a poisonous liquid strong enough to melt metal.",
       evo: { "prev": ["690", "Level 48"] },
       profile: {
         height: "1.8 m",
@@ -25297,7 +25307,7 @@ const Gen3Pokemon = [
         spe: 70
       },
       species: "Generator Pokémon",
-      desc: "The frills on either spokeIde of its head have cells that generate electricity when exposed to sunlight.",
+      desc: "The frills on either side of its head have cells that generate electricity when exposed to sunlight.",
       evo: { next: [["695", "use Sun Stone"]] },
       profile: {
         height: "0.5 m",
@@ -25359,7 +25369,7 @@ const Gen3Pokemon = [
         english: "Tyrunt",
         japanese: "チゴラス",
         chinese: "宝宝暴龙",
-        french: "PtyranpokeIdur"
+        french: "Ptyranidur"
       },
       type: ["Rock", "Dragon"],
       base: {
@@ -25738,7 +25748,7 @@ const Gen3Pokemon = [
         spe: 80
       },
       species: "Dragon Pokémon",
-      desc: "Underneath its slimy skin is a thick layer of fat, and the combination of the two makes enemies’ attacks slpokeIde right off.",
+      desc: "Underneath its slimy skin is a thick layer of fat, and the combination of the two makes enemies’ attacks slide right off.",
       evo: { "prev": ["705", "Level 50, during rain"] },
       profile: {
         height: "2 m",
@@ -25885,7 +25895,7 @@ const Gen3Pokemon = [
         spe: 41
       },
       species: "Pumpkin Pokémon",
-      desc: "It is sapokeId to carry wandering spirits to the place where they belong so they can move on.",
+      desc: "It is said to carry wandering spirits to the place where they belong so they can move on.",
       evo: { next: [["711", "Trade"]] },
       profile: {
         height: "0.4 m",
@@ -25959,7 +25969,7 @@ const Gen3Pokemon = [
         spe: 28
       },
       species: "Ice Chunk Pokémon",
-      desc: "Using air of -150 degrees Fahrenheit, they freeze opponents solpokeId. They live in herds above the snow line on mountains.",
+      desc: "Using air of -150 degrees Fahrenheit, they freeze opponents solid. They live in herds above the snow line on mountains.",
       evo: { next: [["713", "Level 37"]] },
       profile: {
         height: "1 m",
@@ -26107,7 +26117,7 @@ const Gen3Pokemon = [
         spe: 99
       },
       species: "Life Pokémon",
-      desc: "When the horns on its head shine in seven colors, it is sapokeId to be sharing everlasting life.",
+      desc: "When the horns on its head shine in seven colors, it is said to be sharing everlasting life.",
       evo: {},
       profile: {
         height: "3 m",
@@ -26239,7 +26249,7 @@ const Gen3Pokemon = [
         spe: 70
       },
       species: "Mischief Pokémon",
-      desc: "It is sapokeId to be able to seize anything it desires with its six rings and six huge arms. With its power sealed, it is transformed into a much smaller form.",
+      desc: "It is said to be able to seize anything it desires with its six rings and six huge arms. With its power sealed, it is transformed into a much smaller form.",
       evo: {},
       profile: {
         height: "0.5 m",
@@ -26362,7 +26372,7 @@ const Gen3Pokemon = [
     {
       pokeId: 724,
       name: {
-        english: "DecpokeIdueye",
+        english: "Decidueye",
         japanese: "ジュナイパー",
         chinese: "狙射树枭",
         french: "Archéduc"
@@ -26377,7 +26387,7 @@ const Gen3Pokemon = [
         spe: 70
       },
       species: "Arrow Quill Pokémon",
-      desc: "DecpokeIdueye can nock and fire an arrow at an enemy in a tenth of a second, so its battles are decpokeIded in the blink of an eye.",
+      desc: "Decidueye can nock and fire an arrow at an enemy in a tenth of a second, so its battles are decided in the blink of an eye.",
       evo: { "prev": ["723", "Level 34"] },
       profile: {
         height: "1.6 m",
@@ -26421,7 +26431,7 @@ const Gen3Pokemon = [
         egg: ["Field"],
         ability: [
           ["Blaze", "false"],
-          ["IntimpokeIdate", "true"]
+          ["Intimidate", "true"]
         ],
         gender: "87.5:12.5"
       },
@@ -26457,7 +26467,7 @@ const Gen3Pokemon = [
         egg: ["Field"],
         ability: [
           ["Blaze", "false"],
-          ["IntimpokeIdate", "true"]
+          ["Intimidate", "true"]
         ],
         gender: "87.5:12.5"
       },
@@ -26493,7 +26503,7 @@ const Gen3Pokemon = [
         egg: ["Field"],
         ability: [
           ["Blaze", "false"],
-          ["IntimpokeIdate", "true"]
+          ["Intimidate", "true"]
         ],
         gender: "87.5:12.5"
       },
@@ -26529,7 +26539,7 @@ const Gen3Pokemon = [
         egg: ["Water 1", "Field"],
         ability: [
           ["Torrent", "false"],
-          ["LiqupokeId Voice", "true"]
+          ["Liquid Voice", "true"]
         ],
         gender: "87.5:12.5"
       },
@@ -26565,7 +26575,7 @@ const Gen3Pokemon = [
         egg: ["Water 1", "Field"],
         ability: [
           ["Torrent", "false"],
-          ["LiqupokeId Voice", "true"]
+          ["Liquid Voice", "true"]
         ],
         gender: "87.5:12.5"
       },
@@ -26601,7 +26611,7 @@ const Gen3Pokemon = [
         egg: ["Water 1", "Field"],
         ability: [
           ["Torrent", "false"],
-          ["LiqupokeId Voice", "true"]
+          ["Liquid Voice", "true"]
         ],
         gender: "87.5:12.5"
       },
@@ -26847,7 +26857,7 @@ const Gen3Pokemon = [
         spe: 36
       },
       species: "Battery Pokémon",
-      desc: "Its stout shell provpokeIdes excellent defense from attacks. It uses electricity on persistent opponents.",
+      desc: "Its stout shell provides excellent defense from attacks. It uses electricity on persistent opponents.",
       evo: {
         "prev": ["736", "Level 20"],
         next: [["738", "Level up in a Magnetic Field area"]]
@@ -27209,7 +27219,7 @@ const Gen3Pokemon = [
         spe: 45
       },
       species: "Brutal Star Pokémon",
-      desc: "AspokeIde from its head, its body parts regenerate quickly if they’re cut off. After a good night’s sleep, Mareanie is back to normal.",
+      desc: "Aside from its head, its body parts regenerate quickly if they’re cut off. After a good night’s sleep, Mareanie is back to normal.",
       evo: { next: [["748", "Level 38"]] },
       profile: {
         height: "0.4 m",
@@ -27246,7 +27256,7 @@ const Gen3Pokemon = [
         spe: 35
       },
       species: "Brutal Star Pokémon",
-      desc: "With its 12 legs, it creates a dome to shelter within. The flow of the tpokeIdes doesn’t affect Toxapex in there, so it’s very comfortable.",
+      desc: "With its 12 legs, it creates a dome to shelter within. The flow of the tides doesn’t affect Toxapex in there, so it’s very comfortable.",
       evo: { "prev": ["747", "Level 38"] },
       profile: {
         height: "0.7 m",
@@ -27342,7 +27352,7 @@ const Gen3Pokemon = [
     {
       pokeId: 751,
       name: {
-        english: "DewppokeIder",
+        english: "Dewpider",
         japanese: "シズクモ",
         chinese: "滴蛛",
         french: "Araqua"
@@ -27378,7 +27388,7 @@ const Gen3Pokemon = [
     {
       pokeId: 752,
       name: {
-        english: "AraquanpokeId",
+        english: "Araquanid",
         japanese: "オニシズクモ",
         chinese: "滴蛛霸",
         french: "Tarenbulle"
@@ -27393,7 +27403,7 @@ const Gen3Pokemon = [
         spe: 42
       },
       species: "Water Bubble Pokémon",
-      desc: "It has a habit of storing things it values in its water bubble. If its Trainer doesn’t watch out, AraquanpokeId will try to put them in its bubble!",
+      desc: "It has a habit of storing things it values in its water bubble. If its Trainer doesn’t watch out, Araquanid will try to put them in its bubble!",
       evo: { "prev": ["751", "Level 22"] },
       profile: {
         height: "1.8 m",
@@ -27429,7 +27439,7 @@ const Gen3Pokemon = [
         spe: 35
       },
       species: "Sickle Grass Pokémon",
-      desc: "It loves the sunshine. When it basks in the sunlight regularly, it grows up with vivpokeId coloration.",
+      desc: "It loves the sunshine. When it basks in the sunlight regularly, it grows up with vivid coloration.",
       evo: { next: [["754", "Level 34, Daytime"]] },
       profile: {
         height: "0.3 m",
@@ -27835,7 +27845,7 @@ const Gen3Pokemon = [
         spe: 100
       },
       species: "Posy Picker Pokémon",
-      desc: "It picks flowers and sticks them to its body with flupokeIds it produces. The aroma that wafts from its petals has a healing effect.",
+      desc: "It picks flowers and sticks them to its body with fluids it produces. The aroma that wafts from its petals has a healing effect.",
       evo: {},
       profile: {
         height: "0.1 m",
@@ -27872,7 +27882,7 @@ const Gen3Pokemon = [
         spe: 60
       },
       species: "Sage Pokémon",
-      desc: "Oranguru don’t get along with each other, so they’re always engaging in battles of wits to decpokeIde which one is superior.",
+      desc: "Oranguru don’t get along with each other, so they’re always engaging in battles of wits to decide which one is superior.",
       evo: {},
       profile: {
         height: "1.5 m",
@@ -28083,7 +28093,7 @@ const Gen3Pokemon = [
         spe: 5
       },
       species: "Sea Cucumber Pokémon",
-      desc: "Its entire body is covered in its own slime. If you accpokeIdentally step on one, you’ll slip, and it will get mad and smack you!",
+      desc: "Its entire body is covered in its own slime. If you accidentally step on one, you’ll slip, and it will get mad and smack you!",
       evo: {},
       profile: {
         height: "0.3 m",
@@ -28321,7 +28331,7 @@ const Gen3Pokemon = [
         spe: 96
       },
       species: "Disguise Pokémon",
-      desc: "A gust of wind revealed what hpokeIdes under this Pokémon’s rag to a passing Trainer, who went home and died painfully that very night.",
+      desc: "A gust of wind revealed what hides under this Pokémon’s rag to a passing Trainer, who went home and died painfully that very night.",
       evo: {},
       profile: {
         height: "0.2 m",
@@ -28390,8 +28400,8 @@ const Gen3Pokemon = [
         spd: 91,
         spe: 36
       },
-      species: "PlacpokeId Pokémon",
-      desc: "It appears in towns and plays with the children. Drampa will protect kpokeIds when they’re in danger, so their moms don’t have to worry.",
+      species: "Placid Pokémon",
+      desc: "It appears in towns and plays with the children. Drampa will protect kids when they’re in danger, so their moms don’t have to worry.",
       evo: {},
       profile: {
         height: "3 m",
@@ -28608,7 +28618,7 @@ const Gen3Pokemon = [
         spe: 95
       },
       species: "Land Spirit Pokémon",
-      desc: "Although called a guardian deity, Tapu Lele is devopokeId of guilt about its cruel disposition and can be described as nature incarnate.",
+      desc: "Although called a guardian deity, Tapu Lele is devoid of guilt about its cruel disposition and can be described as nature incarnate.",
       evo: {},
       profile: {
         height: "1.2 m",
@@ -28644,7 +28654,7 @@ const Gen3Pokemon = [
         spe: 75
       },
       species: "Land Spirit Pokémon",
-      desc: "It makes ringing sounds with its tail to let others know where it is, avopokeIding unneeded conflicts. This guardian deity of Ula’ula controls plants.",
+      desc: "It makes ringing sounds with its tail to let others know where it is, avoiding unneeded conflicts. This guardian deity of Ula’ula controls plants.",
       evo: {},
       profile: {
         height: "1.9 m",
@@ -28716,7 +28726,7 @@ const Gen3Pokemon = [
         spe: 37
       },
       species: "Nebula Pokémon",
-      desc: "Whether or not it’s a Pokémon from this world is a mystery. When it’s in a jam, it warps away to a safe place to hpokeIde.",
+      desc: "Whether or not it’s a Pokémon from this world is a mystery. When it’s in a jam, it warps away to a safe place to hide.",
       evo: { next: [["790", "Level 43"]] },
       profile: {
         height: "0.2 m",
@@ -28749,7 +28759,7 @@ const Gen3Pokemon = [
         spe: 37
       },
       species: "Protostar Pokémon",
-      desc: "As it absorbs light, Cosmoem continues to grow. Its golden shell is surprisingly solpokeId.",
+      desc: "As it absorbs light, Cosmoem continues to grow. Its golden shell is surprisingly solid.",
       evo: {
         "prev": ["789", "Level 43"],
         next: [
@@ -29217,7 +29227,7 @@ const Gen3Pokemon = [
         spe: 121
       },
       species: "Poison Pin Pokémon",
-      desc: "One kind of Ultra Beast, it fires a glowing, venomous liqupokeId from its needles. This liqupokeId is also immensely adhesive.",
+      desc: "One kind of Ultra Beast, it fires a glowing, venomous liquid from its needles. This liquid is also immensely adhesive.",
       evo: { "prev": ["803", "after Dragon Pulse learned"] },
       profile: {
         height: "3.6 m",
@@ -29250,7 +29260,7 @@ const Gen3Pokemon = [
         spe: 13
       },
       species: "Rampart Pokémon",
-      desc: "When stone walls started moving and attacking, the brute’s true pokeIdentity was this mysterious life-form, which brings to mind an Ultra Beast.",
+      desc: "When stone walls started moving and attacking, the brute’s true identity was this mysterious life-form, which brings to mind an Ultra Beast.",
       evo: {},
       profile: {
         height: "5.5 m",
@@ -29382,7 +29392,7 @@ const Gen3Pokemon = [
         spe: 34
       },
       species: "Hex Nut Pokémon",
-      desc: "Centrifugal force is behind the punches of Melmetal's heavy hex-nut arms. Melmetal is sapokeId to deliver the strongest punches of all Pokémon.",
+      desc: "Centrifugal force is behind the punches of Melmetal's heavy hex-nut arms. Melmetal is said to deliver the strongest punches of all Pokémon.",
       evo: { "prev": ["808", "Pokémon GO only, 400 Meltan Candies"] },
       profile: {
         height: "2.5 m",
@@ -29407,7 +29417,7 @@ const Gen3Pokemon = [
       },
       type: ["Grass"],
       species: "Chimp Pokémon",
-      desc: "It attacks with rappokeId beats of its stick. As it strikes with amazing speed, it gets more and more pumped.",
+      desc: "It attacks with rapid beats of its stick. As it strikes with amazing speed, it gets more and more pumped.",
       evo: { next: [["811", "Level 16"]] },
       profile: {
         height: "0 m",
@@ -29434,7 +29444,7 @@ const Gen3Pokemon = [
       },
       type: ["Grass"],
       species: "Beat Pokémon",
-      desc: "When it’s drumming out rappokeId beats in battle, it gets so caught up in the rhythm that it won’t even notice that it’s already knocked out its opponent.",
+      desc: "When it’s drumming out rapid beats in battle, it gets so caught up in the rhythm that it won’t even notice that it’s already knocked out its opponent.",
       evo: { "prev": ["810", "Level 16"], next: [["812", "Level 35"]] },
       profile: {
         height: "1 m",
@@ -29697,7 +29707,7 @@ const Gen3Pokemon = [
     {
       pokeId: 821,
       name: {
-        english: "RookpokeIdee",
+        english: "Rookidee",
         japanese: "ココガラ",
         chinese: "稚山雀",
         french: "Minisange"
@@ -29816,7 +29826,7 @@ const Gen3Pokemon = [
       },
       type: ["Bug", "Psychic"],
       species: "Radome Pokémon",
-      desc: "As it grows inspokeIde its shell, it uses its psychic abilities to monitor the outspokeIde world and prepare for evolution.",
+      desc: "As it grows inside its shell, it uses its psychic abilities to monitor the outside world and prepare for evolution.",
       evo: { "prev": ["824", "Level 10"], next: [["826", "Level 30"]] },
       profile: {
         height: "0 m",
@@ -30068,7 +30078,7 @@ const Gen3Pokemon = [
       },
       type: ["Water", "Rock"],
       species: "Bite Pokémon",
-      desc: "This Pokémon rappokeIdly extends its retractable neck to sink its sharp fangs into distant enemies and take them down.",
+      desc: "This Pokémon rapidly extends its retractable neck to sink its sharp fangs into distant enemies and take them down.",
       evo: { "prev": ["833", "Level 22"] },
       profile: {
         height: "1 m",
@@ -30178,7 +30188,7 @@ const Gen3Pokemon = [
       },
       type: ["Rock", "Fire"],
       species: "Coal Pokémon",
-      desc: "By rappokeIdly rolling its legs, it can travel at over 18 mph. The temperature of the flames it breathes exceeds 1,800 degrees Fahrenheit.",
+      desc: "By rapidly rolling its legs, it can travel at over 18 mph. The temperature of the flames it breathes exceeds 1,800 degrees Fahrenheit.",
       evo: { "prev": ["837", "Level 18"], next: [["839", "Level 34"]] },
       profile: {
         height: "1 m",
@@ -30267,7 +30277,7 @@ const Gen3Pokemon = [
       },
       type: ["Grass", "Dragon"],
       species: "Apple Wing Pokémon",
-      desc: "It flies on wings of apple skin and spits a powerful acpokeId. It can also change its shape into that of an apple.",
+      desc: "It flies on wings of apple skin and spits a powerful acid. It can also change its shape into that of an apple.",
       evo: { "prev": ["840", "use "] },
       profile: {
         height: "0 m",
@@ -30323,7 +30333,7 @@ const Gen3Pokemon = [
       },
       type: ["Ground"],
       species: "Sand Snake Pokémon",
-      desc: "It spews sand from its nostrils. While the enemy is blinded, it burrows into the ground to hpokeIde.",
+      desc: "It spews sand from its nostrils. While the enemy is blinded, it burrows into the ground to hide.",
       evo: { next: [["844", "Level 36"]] },
       profile: {
         height: "2 m",
@@ -30705,7 +30715,7 @@ const Gen3Pokemon = [
       },
       type: ["Psychic"],
       species: "Serene Pokémon",
-      desc: "Using the brapokeIds on its head, it pummels foes to get them to quiet down. One blow from those brapokeIds would knock out a professional boxer.",
+      desc: "Using the braids on its head, it pummels foes to get them to quiet down. One blow from those braids would knock out a professional boxer.",
       evo: { "prev": ["856", "Level 32"], next: [["858", "Level 42"]] },
       profile: {
         height: "1 m",
@@ -30754,7 +30764,7 @@ const Gen3Pokemon = [
     {
       pokeId: 859,
       name: {
-        english: "ImppokeIdimp",
+        english: "Impidimp",
         japanese: "ベロバー",
         chinese: "捣蛋小妖",
         french: "Grimalin"
@@ -31244,7 +31254,7 @@ const Gen3Pokemon = [
         french: "Morpeko"
       },
       type: ["Electric", "Dark"],
-      species: "Two-SpokeIded Pokémon",
+      species: "Two-Sided Pokémon",
       desc: "It carries electrically roasted seeds with it as if they’re precious treasures. No matter how much it eats, it always gets hungry again in short order.",
       evo: {},
       profile: {
@@ -31434,7 +31444,7 @@ const Gen3Pokemon = [
       },
       type: ["Steel", "Dragon"],
       species: "Alloy Pokémon",
-      desc: "The special metal that composes its body is very light, so this Pokémon has conspokeIderable agility. It lives in caves because it dislikes the rain.",
+      desc: "The special metal that composes its body is very light, so this Pokémon has considerable agility. It lives in caves because it dislikes the rain.",
       evo: {},
       profile: {
         height: "2 m",
@@ -31518,7 +31528,7 @@ const Gen3Pokemon = [
       },
       type: ["Dragon", "Ghost"],
       species: "Stealth Pokémon",
-      desc: "Apparently the Dreepy inspokeIde Dragapult’s horns eagerly look forward to being launched out at Mach speeds.",
+      desc: "Apparently the Dreepy inside Dragapult’s horns eagerly look forward to being launched out at Mach speeds.",
       evo: { "prev": ["886", "Level 60"] },
       profile: {
         height: "3 m",
@@ -31552,7 +31562,7 @@ const Gen3Pokemon = [
         height: "3 m",
         weight: "110 kg",
         gender: "Genderless",
-        ability: [["IntreppokeId-sword", "false"]]
+        ability: [["Intrepid-sword", "false"]]
       },
       image: {
         sprite: "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/888.png",
@@ -31594,7 +31604,7 @@ const Gen3Pokemon = [
       },
       type: ["Poison", "Dragon"],
       species: "Gigantic Pokémon",
-      desc: "It was inspokeIde a meteorite that fell 20,000 years ago. There seems to be a connection between this Pokémon and the Dynamax phenomenon.",
+      desc: "It was inside a meteorite that fell 20,000 years ago. There seems to be a connection between this Pokémon and the Dynamax phenomenon.",
       evo: {},
       profile: {
         height: "20 m",
@@ -31712,14 +31722,14 @@ const Gen3Pokemon = [
     {
       pokeId: 895,
       name: {
-        english: "RegpokeIdrago",
+        english: "Regidrago",
         japanese: "レジドラゴ",
         chinese: "雷吉铎拉戈",
-        french: "RegpokeIdrago"
+        french: "Regidrago"
       },
       type: ["Dragon"],
       species: "Dragon Orb Pokémon",
-      desc: "Its body is composed of crystallized dragon energy. RegpokeIdrago is sapokeId to have the powers of every dragon Pokémon.",
+      desc: "Its body is composed of crystallized dragon energy. Regidrago is said to have the powers of every dragon Pokémon.",
       evo: {},
       profile: {
         height: "2 m",
