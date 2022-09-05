@@ -21,7 +21,17 @@ const FireRedSequence = [
         type: "receive",
         pokemon:[10]
 
-    }
+    },
+
+    {
+        type:"battle",
+        pokemon: [22, 14],
+        rival: false,
+        first: false,
+        levelcap: 15
+
+
+    },
 
 
 ]
